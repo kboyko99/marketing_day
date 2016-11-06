@@ -422,7 +422,7 @@ h2, h3 {
 
 .organizer {
   position: absolute;
-  top: 15vh; }
+  top: 20vh; }
   .organizer.first {
     left: 10vw; }
   .organizer.second {
@@ -431,7 +431,7 @@ h2, h3 {
 .organizer .photo img {
   position: relative;
   border-radius: 100%;
-  width: 30vw;
+  width: 25vw;
   height: auto; }
 
 .organizer .name {
