@@ -44,10 +44,12 @@ header {
   top: 10vh;
   width: 20vw;
   height: auto;
-  z-index: 0;
+  z-index: 3;
 }
 nav {
-    margin-top: 35px;
+  position: relative;
+  top: 13vh;
+  right: 10vw;
     float: right;
     text-align: center;}
 
@@ -123,6 +125,12 @@ nav {
     outline: 0;
     text-decoration: none
 }
+.speakers{
+  margin: 40px; }
+.stripe-holder{
+  position: relative;
+  left: 7.5vw;
+}
 .clear {
   clear: both; }
 .speakers{
@@ -131,7 +139,7 @@ nav {
 .option-num, .perehod, .stripe-content {
   float: left; }
 .option-num {
-  width: 22vw;
+  width: 14vw;
   height: 33vh;
   position: relative;
 }
@@ -147,9 +155,9 @@ nav {
     width: 0;
     height: 0;
     z-index: 9;
-    margin-left: -5.5vw;
-    border-left: 11vw solid transparent;
-    border-right: 11vw solid transparent;
+    margin-left: -3.5vw;
+    border-left: 7vw solid transparent;
+    border-right: 7vw solid transparent;
     &.t-blue{
         border-top: 12vh solid rgb(102, 217, 255);}
     &.t-red{
@@ -214,10 +222,14 @@ nav {
     z-index: 9;
     height: 43vh;}
 .stripe-content {
-    top:-10vh;
-  width: 60vw;
+  top:-10vh;
+  width: 50vw;
   height: 33vh;
   position: relative; }
+.content-text{
+  position: absolute;
+  width: 70%;
+}
 .blue {
     top: 10vh;
     background-color: rgb(102, 217, 255); }
@@ -249,6 +261,7 @@ nav {
 .silver{
   background-color: rgb(179, 179, 179);}
 .grey {
+  color: black;
   background-color: rgb(204, 204, 204);}
 .yellow{
   background-color: rgb(230, 184, 0);}
@@ -262,6 +275,34 @@ nav {
   background-color: rgb(77, 77, 77);}
 .charcoal{
   background-color: rgb(64, 64, 64);}
+.t-right div{
+  content: "";
+  position: absolute;
+  top: 0vh;
+  left: 100%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 33vh solid lightgray;
+  &.magenta {
+  border-left: 7.5vw solid rgb(255, 51, 0); }
+  &.sky {
+  border-left: 7.5vw solid  rgb(26, 198, 255);}
+  &.grey {
+  border-left: 7.5vw solid rgb(204, 204, 204);}
+  &.gold{
+  border-left: 7.5vw solid rgb(204, 163, 0);}
+  &.charcoal{
+  border-left: 7.5vw solid rgb(64, 64, 64);}
+}
+.speaker-photo img{
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  height: 30vh;
+  width: auto;
+  z-index: 99;
+}
 .time-holder {
   margin-top: 100px;
   font-size: 32px;

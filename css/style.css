@@ -47,10 +47,12 @@ header {
   top: 10vh;
   width: 20vw;
   height: auto;
-  z-index: 0; }
+  z-index: 3; }
 
 nav {
-  margin-top: 35px;
+  position: relative;
+  top: 13vh;
+  right: 10vw;
   float: right;
   text-align: center; }
 
@@ -126,6 +128,13 @@ nav {
   outline: 0;
   text-decoration: none; }
 
+.speakers {
+  margin: 40px; }
+
+.stripe-holder {
+  position: relative;
+  left: 7.5vw; }
+
 .clear {
   clear: both; }
 
@@ -137,7 +146,7 @@ nav {
   float: left; }
 
 .option-num {
-  width: 22vw;
+  width: 14vw;
   height: 33vh;
   position: relative; }
 
@@ -154,9 +163,9 @@ nav {
   width: 0;
   height: 0;
   z-index: 9;
-  margin-left: -5.5vw;
-  border-left: 11vw solid transparent;
-  border-right: 11vw solid transparent; }
+  margin-left: -3.5vw;
+  border-left: 7vw solid transparent;
+  border-right: 7vw solid transparent; }
   .triangle div.t-blue {
     border-top: 12vh solid #66d9ff; }
   .triangle div.t-red {
@@ -221,9 +230,13 @@ nav {
 
 .stripe-content {
   top: -10vh;
-  width: 60vw;
+  width: 50vw;
   height: 33vh;
   position: relative; }
+
+.content-text {
+  position: absolute;
+  width: 70%; }
 
 .blue {
   top: 10vh;
@@ -265,6 +278,7 @@ nav {
   background-color: #b3b3b3; }
 
 .grey {
+  color: black;
   background-color: #cccccc; }
 
 .yellow {
@@ -284,6 +298,34 @@ nav {
 
 .charcoal {
   background-color: #404040; }
+
+.t-right div {
+  content: "";
+  position: absolute;
+  top: 0vh;
+  left: 100%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 33vh solid lightgray; }
+  .t-right div.magenta {
+    border-left: 7.5vw solid #ff3300; }
+  .t-right div.sky {
+    border-left: 7.5vw solid #1ac6ff; }
+  .t-right div.grey {
+    border-left: 7.5vw solid #cccccc; }
+  .t-right div.gold {
+    border-left: 7.5vw solid #cca300; }
+  .t-right div.charcoal {
+    border-left: 7.5vw solid #404040; }
+
+.speaker-photo img {
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  height: 30vh;
+  width: auto;
+  z-index: 99; }
 
 .time-holder {
   margin-top: 100px;
