@@ -407,5 +407,43 @@ h2, h3{
 .partners:after {
     display: table
 }
+.organizers-layout{
+  position: relative;
+  top: 50vh;
+}
+.organizer{
+  position: absolute;
+  top: 15vh;
+  &.first{
+    left: 10vw;
+  }
+  &.second{
+    right: 10vw;
+  }
 
+}
+.organizer .photo img{
+  position: relative;
+  border-radius: 100%;
+  width: 30vw;
+  height: auto;
+}
+.organizer .name{
+  color: black;
+  position: relative;
+  top: 1vh;
+  font-size: 130%;
+}
+.organizer .contacts{
+  position: relative;
+  top: 3vh;
+  a{
+    i{
+      color: black;
+      padding: 2vw 2vh;
+      font-size: 250%;
+      outline: none;
+    }
+  }
+}
 
