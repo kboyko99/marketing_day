@@ -1,60 +1,107 @@
-html{
-    background-color: lightgray;
-    color: #fff;
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-}
-.clear{
-    clear: both;
-}
-.option-num, .perehod, .stripe-content{
-    float: left;
-}
+html {
+  background-color: lightgray;
+  color: #fff;
+  text-align: center;
+  font-family: 'Rubik', sans-serif; }
+.clear {
+  clear: both; }
+.main-content{
+    position: relative;
+    top: 20vh;}
+.option-num, .perehod, .stripe-content {
+  float: left; }
 .option-num {
-    width:25%;
-    height:220px;
-    position: relative;
-    /*margin-top:40%;*/
+  width: 22vw;
+  height: 33vh;
+  position: relative;
 }
-.option-num:after{
-    content:'';
+.triangle{
+    width: 25%;
+    height: 0;
+    padding-left:25%;
+    padding-top: 25%;
+    overflow: hidden;}
+.triangle div {
     position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    top: 99.9%;
     width: 0;
     height: 0;
-    border-top: solid 50px blue;
-    border-left: solid 130px transparent;
-    border-right: solid 130px transparent;
-    z-index:1;
+    z-index: 9;
+    margin-left: -5.5vw;
+    border-left: 11vw solid transparent;
+    border-right: 11vw solid transparent;
+    &.t-blue{
+        border-top: 12vh solid rgb(102, 217, 255);}
+    &.t-red{
+        border-top: 12vh solid rgb(255, 71, 26);}
+    &.t-white{
+         border-top: 12vh solid rgb(242, 242, 242);}
+    &.t-yellow{
+        border-top: 12vh solid rgb(230, 184, 0);}
+    &.t-dark-grey{
+        border-top: 12vh solid rgb(77, 77, 77);}
 }
-.perehod{
-    width:7%;
-    height:220px;
-    position: relative;
-}
-.perehod::before{
-    content: '';
+.perehod {
+  width: 5vw;
+  height: 33vh;
+  position: relative; }
+.perehod div{
     position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    top: -9.8vh;
     width: 0;
     height: 0;
-    border-bottom: solid 50px cyan;
-    border-left: solid 74px transparent;
-    border-right: solid 0 transparent;
-    z-index: 1;
+    z-index: 9;
+    margin-left: 0vw;
+    margin-top: 0;
+    border-left: 5vw solid transparent;
+    border-right: 0vw solid transparent;
+    &.t-cyan{
+        border-left: 0vw solid transparent;
+        border-right: 5vw solid transparent;
+        border-bottom: 10vh solid rgb(0, 172, 230);}
+    &.t-rose{
+        border-bottom: 10vh solid rgb(230, 46, 0);}
+    &.t-silver{
+        border-bottom: 10vh solid rgb(179, 179, 179);}
+    &.t-brown{
+        border-bottom: 10vh solid rgb(179, 143, 0);}
+    &.t-black{
+        border-bottom: 10vh solid rgb(51, 51, 51);}
+    &.background{
+        border-bottom: 10vh solid transparent; 
+    }
 }
-.stripe-content{
-    width:68%;
-    height:220px;
+.perehod.bottom{
+    width: 0vw;
+    height: 0vh;
+    div{
+    position: absolute;
+    top: 33.1vh;
+    width: 0;
+    height: 0;
+    z-index: 9;
+    margin-left: -5vw;
+    margin-top: -10vh;
+    border-left: 5vw solid transparent;
+    border-right: 0vw solid transparent;
+        &.background{
+        border-bottom: 10vh solid lightgray; 
+    }
+    }
+}
+.perehod.cyan{
     position: relative;
-}
-.stripe-content::before{
+    z-index: 9;
+    height: 43vh;}
+.stripe-content {
+    top:-10vh;
+  width: 60vw;
+  height: 33vh;
+  position: relative; }
+.blue {
+    top: 10vh;
+    background-color: rgb(102, 217, 255); }
+.blue:before{
     content: '';
     position: absolute;
     bottom: 100%;
@@ -62,34 +109,41 @@ html{
     right: 0;
     margin: 0 auto;
     width: 100%;
-    height: 50px;
-    background-color: skyblue;
+    height: 20vh;
     z-index: 1;
-}
-.blue {
-    background-color: blue;
-}
-.cyan{
-    background-color: cyan;
-}
-.sky{
-    background-color: skyblue;
-}
-.red{
-    background-color: red;
-}
-.magenta{
-    background-color: magenta;
-}
-.rose{
-    background-color: mistyrose;
-}
-.time-holder{
-    margin-top:100px;
-    font-size: 32px;
-    font-style: oblique;
-    font-weight:900;
-}
-.new{
-    display: block;
-}
+    background-color: rgb(102, 217, 255);}
+.cyan {
+  background-color: rgb(0, 172, 230); }
+.sky {
+    top:0vh;
+  background-color:  rgb(26, 198, 255);}
+.red {
+  background-color: rgb(255, 71, 26); }
+.magenta {
+  background-color: rgb(255, 51, 0); }
+.rose {
+  background-color: rgb(230, 46, 0); }
+.white {
+  background-color: rgb(242, 242, 242); 
+  color: black;}
+.silver{
+  background-color: rgb(179, 179, 179);}
+.grey {
+  background-color: rgb(204, 204, 204);}
+.yellow{
+  background-color: rgb(230, 184, 0);}
+.brown{
+  background-color: rgb(179, 143, 0);}
+.gold{
+  background-color: rgb(204, 163, 0);}
+.black{
+  background-color: rgb(51, 51, 51);}
+.dark-grey{
+  background-color: rgb(77, 77, 77);}
+.charcoal{
+  background-color: rgb(64, 64, 64);}
+.time-holder {
+  margin-top: 100px;
+  font-size: 32px;
+  font-style: oblique;
+  font-weight: 900; }
