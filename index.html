@@ -6,8 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rible stripe</title>
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet">
+<!--     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">-->
+     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="head-layout">
@@ -140,20 +141,71 @@
             <div class="place-address">провулок Василівський, 10 (5&nbsp;поверх)<br>Креативний ІТ-простір KOWO</div>
         </address>
     </div>
-    <div id="map" style="width:100%;height:500px"></div>
+    <div id="map"></div>
 </div>
+
+<div class="partners-layout" id="partners">
+    <h3 class="fullwidth_header">Партнери заходу</h3>
+    <div class="partners">
+        <div class="container-hd">
+            <div class="partner-block">
+                <a href="http://programming.kr.ua" class="partner-link">
+                    <div class="partner-img"><img src="images/partners/sh.png" alt="school"></div>
+                    <div class="partner-moto">Школа програмування</div>
+                </a>
+            </div>
+            <div class="partner-block">
+                <a class="partner-link" href="http://kowo.me">
+                    <div class="partner-img"><img src="images/partners/kowo.png" alt="КОВО"></div>
+                    <div class="partner-moto">Креативний ІТ-Простір</div>
+                </a>
+            </div>
+            <div class="partner-block">
+                <a class="partner-link" href="http://dynamicstreaming.net/">
+                    <div class="partner-img"><img src="images/partners/ds.png" alt="dynamic streaming"></div>
+                    <div class="partner-moto">We handle streaming projects of any complexity</div>
+                </a>
+            </div>
+            <div class="partner-block">
+                <a class="partner-link" href="http://onix-systems.com/">
+                    <div class="partner-img"><img src="images/partners/onix.png" alt="onix"></div>
+                    <div class="partner-moto">We are Your Future in Assisted Technology Development</div>
+                </a>
+            </div>
+            <div class="partner-block">
+                <a class="partner-link" href="http://kinect.pro/">
+                    <div class="partner-img"><img src="images/partners/KinectPRO.png" alt="kinectpro"></div>
+                    <div class="partner-moto">Enrich routine things</div>
+                </a>
+            </div>
+            <div class="partner-block">
+                <a class="partner-link" href="http://sbtsystems.com/">
+                    <div class="partner-img"><img src="images/partners/sbt.jpg" alt="sbt-systems"></div>
+                    <div class="partner-moto">International BPO provider for IT companies</div>
+                </a>
+            </div>
+            <div class="partner-block">
+                <a class="partner-link" href="http://bandapixels.com/">
+                    <div class="partner-img"><img src="images/partners/banda.png" alt="banda pixels"></div>
+                    <div class="partner-moto">Смотреть должно быть приятно</div>
+                </a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
 <script>
 function myMap() {
+  var myCenter = new google.maps.LatLng(48.504950, 32.259807);
   var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-    center: new google.maps.LatLng(48.505241, 32.260236),
-    zoom: 17
-  };
+  var mapOptions = {center: myCenter, zoom: 17};
   var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter, icon:'images/pin.png'});
+  marker.setMap(map);
 }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyAAUO3_MERnqUX0eqCzQ59zT1hLbJ2GkrQ"></script>
-<!-- <script src="http://maps.googleapis.com/maps/api/js?"></script>
- -->
+
 </body>
 </html>
