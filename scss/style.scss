@@ -3,9 +3,129 @@ html {
   color: #fff;
   text-align: center;
   font-family: 'Rubik', sans-serif; }
+.contact-info a,.nav__links,.register__button,.speaker__link {
+    text-decoration: none
+}
+.head-registration,.head__title,.place-address,.rwd-table tr td,.speaker,.speaker_photo,.speakers {
+    text-align: center
+}
+.head-layout{
+  position: relative;
+  top: -1vh;
+  left: -1vw;
+  background: url('../images/m_strategy.png') no-repeat center center;
+  -webkit-background-size: 100vw;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 99vw;
+  height: 200vh;
+}
+.head-layout:after{
+    background: transparent;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    content: "";
+    display: block;
+    height: 200vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 99vw;}
+header {
+    color: black;}
+.logo{
+  position: absolute;
+  left: 10vw;
+  top: 10vh;
+  width: 20vw;
+  height: auto;
+  z-index: 0;
+}
+nav {
+    margin-top: 35px;
+    float: right;
+    text-align: center;}
+
+.nav__links {
+    position: relative;
+    z-index: 3;
+    color: #ECF0F1;
+    padding: 16px;
+    display: inline-block;}
+.head__title {
+  position: absolute;
+  background: linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5)) ;
+  z-index: 3;
+  font-size: 250%;
+  width: 99vw;
+  top: 35vh;
+  padding: 5vh 0;}
+
+.head__title h1 {
+    margin: 0;
+    font-size: 180%;}
+
+.head__title__city {
+    margin: 2vh 0; 
+    font-size: 80%;}
+
+
+.head-registration{
+  position: relative;
+  top: 80vh;
+}
+.date{
+  margin: 2vh 0;
+  font-size: 50%;
+}
+.register__button {
+  position: absolute;
+  z-index: 3;
+  width: 10vw;
+  margin-top: 7vh; 
+  left: 40vw;
+  border: 2px solid #ECF0F1;
+  color: #ECF0F1;
+  background-color: transparent;
+  padding: 1.5% 2.5%;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  transition-duration: .5s;
+  transition-property: color,background-color;
+  cursor: pointer
+}
+.register__button:focus,.register__button:hover {
+    -webkit-animation-name: hvr-back-pulse;
+    animation-name: hvr-back-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: rgba(255,255,255,.35);
+    color: #ECF0F1;
+    outline: 0;
+    text-decoration: none
+}
 .clear {
   clear: both; }
-.main-content{
+.speakers{
     position: relative;
     top: 20vh;}
 .option-num, .perehod, .stripe-content {
@@ -147,3 +267,49 @@ html {
   font-size: 32px;
   font-style: oblique;
   font-weight: 900; }
+
+.fullwidth_header,.head-moto {
+    font-family: 'Roboto Slab',serif;
+    text-align: center;
+    color: #ECF0F1
+}
+
+.container-hd {
+    width: 1080px;
+    margin: 0 auto
+}
+
+@media screen and (max-width: 1090px) {
+    .container-hd {
+        width:95%
+    }
+}
+
+.fullwidth_header {
+    font-size: 210%;
+    padding: 2%;
+    margin: 0;
+    letter-spacing: 3px;
+    background-color: rgba(41,128,185,.99)
+}
+
+.place-map {
+    height: 450px;
+    width: 100%
+}
+
+.place-address {
+    padding: 2%;
+    font-size: 120%
+}
+.head-moto {
+    font-size: 150%;
+    font-weight: 100;
+    width: 400px;
+    padding: 5%;
+    margin: 0 auto
+}
+
+.head-moto h1 {
+    margin-top: 38%
+}

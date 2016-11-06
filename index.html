@@ -10,8 +10,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="head-layout">
+    <img src="images/logo.png" class="logo">
+	<header>
+	    <div class="navigation">
+	        <nav>
+	            <a class="nav__links" href="../">Головна</a>
+	            <a data-scroll="" class="nav__links" href="#schedule">Розклад</a>
+	            <a data-scroll="" class="nav__links" href="#place">Місце</a>
+	            <a data-scroll="" class="nav__links" href="#partners">Партнери</a>
+	            <a data-scroll="" class="nav__links" href="#contacts">Контакти</a>
+	        </nav>
+	    </div>
+	    <div class="head__title">
+	        <h1>Marketing Day<br><span class="head__title__city">Kropyvnytskyi</span></h1>
+	        <div class="date">10 грудня, 2016</div>
+	    </div>
+	    <center>
+    	<div class="head-registration">
+	        <a href="" target="_blank" class="register__button">
+	            РЕЄСТРАЦІЯ
+	        </a>
+	    </div>
+	    </center>
+	</header>
 
-<div style="margin: 40px;" class="main-content">
+</div>
+
+<div style="margin: 40px;" class="speakers" id="schedule">
 	<div class="stripe-holder">
         <div class="option-num blue">
             <div class="time-holder">2:55</div>
@@ -106,9 +132,28 @@
         </div>
         <div class="clear"></div>
     </div>
-
-
 </div>
 
+<div class="place-layout" id="place"><h3 class="fullwidth_header">Місце проведення</h3>
+    <div class="container-hd">
+        <address>
+            <div class="place-address">провулок Василівський, 10 (5&nbsp;поверх)<br>Креативний ІТ-простір KOWO</div>
+        </address>
+    </div>
+    <div id="map" style="width:100%;height:500px"></div>
+</div>
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(48.505241, 32.260236),
+    zoom: 17
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap&key=AIzaSyAAUO3_MERnqUX0eqCzQ59zT1hLbJ2GkrQ"></script>
+<!-- <script src="http://maps.googleapis.com/maps/api/js?"></script>
+ -->
 </body>
 </html>
