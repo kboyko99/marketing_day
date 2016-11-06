@@ -1,0 +1,149 @@
+html {
+  background-color: lightgray;
+  color: #fff;
+  text-align: center;
+  font-family: 'Rubik', sans-serif; }
+.clear {
+  clear: both; }
+.main-content{
+    position: relative;
+    top: 20vh;}
+.option-num, .perehod, .stripe-content {
+  float: left; }
+.option-num {
+  width: 22vw;
+  height: 33vh;
+  position: relative;
+}
+.triangle{
+    width: 25%;
+    height: 0;
+    padding-left:25%;
+    padding-top: 25%;
+    overflow: hidden;}
+.triangle div {
+    position: absolute;
+    top: 99.9%;
+    width: 0;
+    height: 0;
+    z-index: 9;
+    margin-left: -5.5vw;
+    border-left: 11vw solid transparent;
+    border-right: 11vw solid transparent;
+    &.t-blue{
+        border-top: 12vh solid rgb(102, 217, 255);}
+    &.t-red{
+        border-top: 12vh solid rgb(255, 71, 26);}
+    &.t-white{
+         border-top: 12vh solid rgb(242, 242, 242);}
+    &.t-yellow{
+        border-top: 12vh solid rgb(230, 184, 0);}
+    &.t-dark-grey{
+        border-top: 12vh solid rgb(77, 77, 77);}
+}
+.perehod {
+  width: 5vw;
+  height: 33vh;
+  position: relative; }
+.perehod div{
+    position: absolute;
+    top: -9.8vh;
+    width: 0;
+    height: 0;
+    z-index: 9;
+    margin-left: 0vw;
+    margin-top: 0;
+    border-left: 5vw solid transparent;
+    border-right: 0vw solid transparent;
+    &.t-cyan{
+        border-left: 0vw solid transparent;
+        border-right: 5vw solid transparent;
+        border-bottom: 10vh solid rgb(0, 172, 230);}
+    &.t-rose{
+        border-bottom: 10vh solid rgb(230, 46, 0);}
+    &.t-silver{
+        border-bottom: 10vh solid rgb(179, 179, 179);}
+    &.t-brown{
+        border-bottom: 10vh solid rgb(179, 143, 0);}
+    &.t-black{
+        border-bottom: 10vh solid rgb(51, 51, 51);}
+    &.background{
+        border-bottom: 10vh solid transparent; 
+    }
+}
+.perehod.bottom{
+    width: 0vw;
+    height: 0vh;
+    div{
+    position: absolute;
+    top: 33.1vh;
+    width: 0;
+    height: 0;
+    z-index: 9;
+    margin-left: -5vw;
+    margin-top: -10vh;
+    border-left: 5vw solid transparent;
+    border-right: 0vw solid transparent;
+        &.background{
+        border-bottom: 10vh solid lightgray; 
+    }
+    }
+}
+.perehod.cyan{
+    position: relative;
+    z-index: 9;
+    height: 43vh;}
+.stripe-content {
+    top:-10vh;
+  width: 60vw;
+  height: 33vh;
+  position: relative; }
+.blue {
+    top: 10vh;
+    background-color: rgb(102, 217, 255); }
+.blue:before{
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 20vh;
+    z-index: 1;
+    background-color: rgb(102, 217, 255);}
+.cyan {
+  background-color: rgb(0, 172, 230); }
+.sky {
+    top:0vh;
+  background-color:  rgb(26, 198, 255);}
+.red {
+  background-color: rgb(255, 71, 26); }
+.magenta {
+  background-color: rgb(255, 51, 0); }
+.rose {
+  background-color: rgb(230, 46, 0); }
+.white {
+  background-color: rgb(242, 242, 242); 
+  color: black;}
+.silver{
+  background-color: rgb(179, 179, 179);}
+.grey {
+  background-color: rgb(204, 204, 204);}
+.yellow{
+  background-color: rgb(230, 184, 0);}
+.brown{
+  background-color: rgb(179, 143, 0);}
+.gold{
+  background-color: rgb(204, 163, 0);}
+.black{
+  background-color: rgb(51, 51, 51);}
+.dark-grey{
+  background-color: rgb(77, 77, 77);}
+.charcoal{
+  background-color: rgb(64, 64, 64);}
+.time-holder {
+  margin-top: 100px;
+  font-size: 32px;
+  font-style: oblique;
+  font-weight: 900; }
