@@ -1,5 +1,8 @@
+body {
+  margin: 0; }
+
 html {
-  background-color: lightgray;
+  background-color: #09aee6;
   color: #fff;
   text-align: center;
   font-family: 'Ubuntu', sans-serif; }
@@ -14,7 +17,7 @@ html {
   position: relative;
   top: -1vh;
   left: -1vw;
-  background: url("../images/m_strategy.png") no-repeat center center;
+  background: url("../images/background.png") no-repeat center center;
   -webkit-background-size: 100vw;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -24,12 +27,12 @@ html {
 
 .head-layout:after {
   background: transparent;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.5)));
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
   content: "";
   display: block;
   height: 200vh;
@@ -221,7 +224,7 @@ nav {
     border-left: 5vw solid transparent;
     border-right: 0vw solid transparent; }
     .perehod.bottom div.background {
-      border-bottom: 10vh solid lightgray; }
+      border-bottom: 10vh solid #09aee6; }
 
 .perehod.cyan {
   position: relative;
@@ -307,7 +310,7 @@ nav {
   display: block;
   width: 0;
   height: 0;
-  border-bottom: 33vh solid lightgray; }
+  border-bottom: 33vh solid #09aee6; }
   .t-right div.magenta {
     border-left: 7.5vw solid #ff3300; }
   .t-right div.sky {
@@ -452,12 +455,6 @@ h2, h3 {
 .contacts_break {
   display: none; }
 
-.contact-info-tel__link {
-  word-break: keep-all;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto; }
-
 @media (max-width: 510px) {
   .copy {
     display: none; }
@@ -467,7 +464,7 @@ h2, h3 {
 .social-link {
   position: relative;
   line-height: 68px;
-  width: 32px;
+  width: 100%;
   text-decoration: none;
   color: #ECF0F1;
   margin-left: 5px; }
@@ -498,25 +495,13 @@ footer {
   overflow: hidden;
   position: relative;
   top: 135vh;
-  bottom: 0vh; }
+  height: 50vh; }
 
-.contact-info {
-  background-color: #00476b;
-  line-height: 33px;
-  text-align: center;
-  color: #fff; }
-
-.contact-info a {
-  color: #74d0ff;
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s; }
-
-.contact-info a:hover {
-  color: #c1eaff;
-  text-decoration: underline; }
+.footer {
+  position: relative;
+  top: 50vh;
+  bottom: 0px;
+  z-index: 10; }
 
 .copy {
   float: left;
@@ -525,7 +510,18 @@ footer {
   padding-left: 5%; }
 
 .social-links {
-  float: right;
+  background-color: #000e1d;
+  float: left;
   line-height: 62px;
-  text-align: right;
-  padding-right: 4%; }
+  text-align: center;
+  padding-right: 4%;
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  width: 40vw;
+  height: auto; }
+
+.registration {
+  position: relative;
+  top: 10vh;
+  left: 20vw; }
