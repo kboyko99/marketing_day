@@ -131,17 +131,15 @@ nav {
   outline: 0;
   text-decoration: none; }
 
-.speakers {
-  margin: 40px; }
-
 .stripe-holder {
   position: relative;
-  left: 7.5vw; }
+  left: 7.5vw;
+  width: 85vw; }
 
 .clear {
   clear: both; }
 
-.speakers {
+.speakers-layout {
   position: relative;
   top: 20vh; }
 
