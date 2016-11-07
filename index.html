@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="scripts/smooth-scroll.min.js"></script>
 </head>
 <body>
@@ -18,11 +19,11 @@
 	    <div class="navigation">
 	        <nav>
 	            <a class="nav__links" href="../">Головна</a>
-	            <a data-scroll="" class="nav__links" href="#schedule">Розклад</a>
-	            <a data-scroll="" class="nav__links" href="#place">Місце</a>
-	            <a data-scroll="" class="nav__links" href="#partners">Партнери</a>
-                <a data-scroll="" class="nav__links" href="#organizers">Організатори</a>
-	            <a data-scroll="" class="nav__links" href="#contacts">Контакти</a>
+	            <a data-scroll="" class="nav__links schedule" href="#schedule">Розклад</a>
+	            <a data-scroll="" class="nav__links place" href="#place">Місце</a>
+	            <a data-scroll="" class="nav__links partners" href="#partners">Партнери</a>
+                <a data-scroll="" class="nav__links organizers" href="#organizers">Організатори</a>
+	            <a data-scroll="" class="nav__links contacts" href="#contacts">Контакти</a>
 	        </nav>
 	    </div>
 	    <div class="head__title">
@@ -265,37 +266,44 @@
 </div>
 
 <footer>
-    <div class="copy">2016</div>
     <div class="social-links">
-        <a target="_blank" class="social-link" href="vk">
-            </a><a target="_blank" class="social-link" href="https://vk.com/kowohub">
+            <a target="_blank" class="social-link" href="vk"></a>
+            <a target="_blank" class="social-link" href="https://vk.com/kowohub">
                 <img class="social-icons vk" src="images/icons/vk-social-network-logo.png" alt="vk">
-                vkontakte
+                <span>Vkontakte</span>
             </a>
             <a target="_blank" class="social-link" href="https://www.facebook.com/kowo.me">
                 <img class="social-icons fb" src="images/icons/social.png" alt="facebook">
-                facebook
+                <span>Facebook</span>
             </a>
             <a target="_blank" class="social-link" href="https://www.instagram.com/kowo.me/">
                 <img class="social-icons instagram" src="images/icons/instagram-logo.png" alt="instagram">
-                instagram
+                <span>Instagram</span>
             </a>
-            <a target="_blank" class="social-link email" href="http://programming.kr.ua/subscriptions/">
-                <img class="social-icons emails" src="images/icons/envelope.png" alt="subscription">Підпишись на розсилку
-                новин
+            <a target="_blank" class="social-link" href="http://programming.kr.ua/subscriptions/">
+                <img class="social-icons emails" src="images/icons/envelope.png" alt="subscription">
+                <span>Підпишись на розсилку новин</span>
             </a>
+
     </div>
     <div class="registration">
         <h2>Реєструйся!</h2>
-        <a href="" target="_blank" class="register__button">
+        <a href="" target="_blank" class="register__button down">
             РЕЄСТРАЦІЯ
         </a>
     </div>
+    <!-- <div class="copy">2016</div> -->
     <img class="footer" src="images/footer.png">
-
 </footer>
 
 <script>
+// $('#organizers').smoothScroll();
+  // scroll into view
+      document.querySelector('.organizers').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('#organizers').scrollIntoView({ behavior: 'smooth' });
+      });
+
 function myMap() {
   var myCenter = new google.maps.LatLng(48.504950, 32.259807);
   var mapCanvas = document.getElementById("map");
