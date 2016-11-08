@@ -1,5 +1,6 @@
-$footer-color: #000e1d;
-$page-background: rgb(9,174,230);
+$footer-color: /*#000e1d*/lightgray;
+$schedule-background: #09ABE2;
+$page-background: white;
 body{
   margin: 0;
 }
@@ -7,7 +8,7 @@ html {
   background-color: $page-background;
   color: #fff;
   text-align: center;
-  font-family: 'Ubuntu', sans-serif;}
+  font-family: 'Roboto Condensed', sans-serif;}
 .contact-info a,.nav__links,.register__button,.speaker__link {
     text-decoration: none
 }
@@ -16,15 +17,13 @@ html {
 }
 .head-layout{
   position: relative;
-  top: 0vh;
-  left: 0vw;
   background: url('../images/background.png') no-repeat center center;
   -webkit-background-size: 100vw;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  height: 200vh;
+  height: 100vh;
 }
 .head-layout:after{
     background: transparent;
@@ -36,7 +35,7 @@ html {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
     content: "";
     display: block;
-    height: 200vh;
+    height: 100vh;
     left: 0;
     position: absolute;
     top: 0;
@@ -114,6 +113,10 @@ nav {
   transition-property: color,background-color;
   cursor: pointer;
   &.down{
+    color: $page-background;
+    border-color: $page-background;
+    border-width: 1vh;
+    font-weight: bold;
     left: inherit;
     min-width: 20vw; 
     top: 20vh;
@@ -135,8 +138,204 @@ nav {
     background-color: rgba(255,255,255,.35);
     color: #ECF0F1;
     outline: 0;
-    text-decoration: none
+    text-decoration: none;
+    &.down{
+      color: $page-background;
+    }
 }
+.schedule {
+
+  margin: -150px 0 0;
+  padding-top: 480px;
+}
+  .schedule__inner {
+    padding: 0 10%;
+    max-width: 80%;
+    margin: 0 auto; 
+    background: $schedule-background no-repeat 50% 0; }
+
+  .schedule__content {
+    margin-bottom: 50px; }
+    .schedule__content:last-child {
+      margin-bottom: 0; }
+  .schedule__hall-titles {
+    margin-left: 210px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff; }
+    @media screen and (max-width: 720px) {
+      .schedule__hall-titles {
+        margin-left: 100px;
+        font-size: 13px; } }
+  .schedule__hall-title-a, .schedule__hall-title-b {
+    width: 50%;
+    text-align: center;
+    display: inline-block; }
+    .schedule__hall-title-a--triple, .schedule__hall-title-b--triple {
+      width: 33%; }
+  .schedule__hall-title-c {
+    width: 33%;
+    text-align: center;
+    display: inline-block; }
+  .schedule__title {
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    font-size: 80px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Jura';
+    font-weight: 600;
+    margin-bottom: 40px; }
+    @media screen and (max-width: 720px) {
+      .schedule__title {
+        font-size: 40px;
+        letter-spacing: -1px; } }
+  .schedule__second-title {
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Jura';
+    margin-bottom: 30px;
+    font-weight: 600; }
+    @media screen and (max-width: 720px) {
+      .schedule__second-title {
+        font-size: 30px;
+        letter-spacing: -1px; } }
+  .schedule__bottom-bg {
+    height: 309px;
+    margin-top: -10px;
+    width: 100%;
+    background: url("../images/schedule.png") no-repeat 50% 100%; }
+  .schedule__info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 8px; }
+    .schedule__info-time {
+      padding-left: 25px;
+      color: #fff;
+      font-size: 16px;
+      width: 205px;
+      height: 56px;
+      line-height: 56px;
+      background: url("../images/connector-1_blue.png") no-repeat 100% 50% #1DB3E6; }
+      .schedule__info-time--hatching {
+        background: url("../images/connector-hatching.png") no-repeat 100% 50% #1DB3E6; }
+      @media screen and (max-width: 720px) {
+        .schedule__info-time {
+          width: 100px;
+          font-size: 13px;
+          padding-left: 5px; } }
+    .schedule__info-text {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      height: 56px;
+      line-height: 56px;
+      color: #fff;
+      font-size: 16px;
+      background: #089DD1;
+      padding-left: 15px; 
+      span.text{
+        padding-top: 10px;
+      }
+    }
+      @media screen and (max-width: 720px) {
+        .schedule__info-text {
+          font-size: 13px; } }
+      .schedule__info-text--hatching {
+        background: url("../images/hatching.png") repeat -1px 0 #089DD1; }
+        @media screen and (max-width: 720px) {
+          .schedule__info-text--hatching {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; } }
+      .schedule__info-text--with-margin {
+        margin-right: 13px; }
+      .schedule__info-text-icon {
+        display: inline-block;
+        margin: -4px 10px 0 0;
+        vertical-align: middle; }
+        .schedule__info-text-icon.form {
+          width: 34px;
+          height: 37px;
+          background: url("../images/form.png") no-repeat 0 0; }
+
+        .schedule__info-text-icon.cup {
+          width: 41px;
+          height: 41px;
+          background: url("../images/cup.png") no-repeat 0 0; }
+        .schedule__info-text-icon.key {
+          width: 38px;
+          height: 38px;
+          background: url("../images/key.png") no-repeat 0 0; }
+        .schedule__info-text-icon.dinner {
+          width: 34px;
+          height: 32px;
+          background: url("../images/dinner.png") no-repeat 0 0; }
+  .unlock{
+    width: 40px;
+    padding-top: 8px;
+    }
+  .schedule__reporter {
+    color: #666666; }
+  .schedule__report {
+    margin-bottom: 8px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .schedule__report-time {
+      padding-left: 25px;
+      color: #000;
+      font-size: 16px;
+      width: 185px;
+      height: 56px;
+      line-height: 56px;
+      background: url("../images/connector-2.png") no-repeat 100% 50% #fff; }
+      @media screen and (max-width: 720px) {
+        .schedule__report-time {
+          width: 80px;
+          padding-left: 5px;
+          font-size: 13px; } }
+    .schedule__report-hall-a, .schedule__report-hall-b, .schedule__report-hall-c {
+      padding: 25px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      font-size: 16px;
+      text-align: center;
+      background: #fff; 
+      color: black;}
+      @media screen and (max-width: 720px) {
+        .schedule__report-hall-a, .schedule__report-hall-b, .schedule__report-hall-c {
+          font-size: 13px; } }
+    .schedule__report-hall-a {
+      margin-right: 13px; }
+    .schedule__report-hall-c {
+      margin-left: 13px; }
+
+
+/*
 .stripe-holder{
   position: relative;
   left: 7.5vw;
@@ -319,6 +518,7 @@ nav {
   font-size: 32px;
   font-style: oblique;
   font-weight: 900; }
+*/
 h2, h3{
   font-family: 'Roboto', sans-serif;
 }
@@ -350,17 +550,18 @@ h2, h3{
 
 #map{
   width: 100%;
-  height: 90vh;
+  height: 70vh;
   pointer-events:none;
 }
 
 .place-layout{
   position: relative;
   top: 30vh;
-  height: 90vh;
+  height: 70vh;
 }
 .place-address{
   font-style: normal;
+  padding: 3vh 0vw;
   color: black;
 }
 
@@ -421,38 +622,55 @@ h2, h3{
 .organizers-layout{
   position: relative;
   top: 50vh;
+  height: 80vh;
 }
 .organizer{
-  position: absolute;
-  top: 20vh;
   &.first{
-    left: 10vw;
+    div.name{
+      margin-top: -18vw;
+      margin-left: 21vw;
+    }
+    div.contacts{
+        margin-left: 25vw;
+    }
+    text-align: -webkit-left;
+    margin-top: 10vh;
   }
   &.second{
+    div.name{
+      margin-top: -18vw;
+      margin-right: 21vw;
+    }
+    div.contacts{
+      margin-right:  25vw;
+    }
+    text-align: -webkit-right;
+    margin-top: 20vh;
     right: 10vw;
   }
 
 }
-.organizer .photo img{
-  position: relative;
-  border-radius: 100%;
-  width: 25vw;
-  height: auto;
+.organizer .photo{
+  width: 20vw;
+  height: 20vw;
+  img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 100%;
+  }
 }
 .organizer .name{
   color: black;
   position: relative;
-  top: 1vh;
-  font-size: 130%;
+  font-size: 2.5vw;
 }
 .organizer .contacts{
-  position: relative;
-  top: 3vh;
   a{
     i{
       color: black;
-      padding: 2vw 2vh;
-      font-size: 250%;
+      padding: 2vh 1vw;
+      font-size: 2.5vw;
       outline: none;
     }
   }
@@ -511,14 +729,14 @@ footer {
     background-color: $footer-color;
     overflow: hidden;
     position: relative;
-    top: 135vh;
-    height: 120vh;
+    margin-top: 46%;
+    height:90vh;
 }
 .footer{
   position: relative;
   top: 50vh;
   bottom: 0px;
-  width: 100%;
+  width: 55%;
   z-index: 10;
 }
 
@@ -551,6 +769,7 @@ footer {
     top: 0vh;
     right: 0vw;
   h2{
+    color: $page-background;
     position: absolute;
     left: inherit;
     width: 20vw;
