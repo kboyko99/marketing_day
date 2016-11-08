@@ -14,7 +14,6 @@
 </head>
 <body>
 <div class="head-layout">
-    <img src="images/logo.png" class="logo">
 	<header>
 	    <div class="navigation">
 	        <nav>
@@ -26,17 +25,19 @@
 	            <a data-scroll="" class="nav__links contacts" href="#contacts">Контакти</a>
 	        </nav>
 	    </div>
-	    <div class="head__title">
-	        <h1>Digital Marketing Day<br><span class="head__title__city">Кропивницький</span></h1>
-	        <div class="date">10 грудня, 2016</div>
-	    </div>
-	    <center>
-    	<div class="head-registration">
-	        <a href="" target="_blank" class="register__button">
-	            РЕЄСТРАЦІЯ
-	        </a>
-	    </div>
-	    </center>
+        <div class="title">
+    	    <div class="head__title heading">
+    	        <h1>Digital Marketing Day<br></h1>
+            </div>
+            <div class="head__title information">
+                <img src="images/logo.png" class="head__title logo">
+                <span class="head__title__city">Кропивницький</span><br>
+                <span class="head__title date">10 грудня, 2016</span>
+            </div>
+        </div>
+        <a href="" target="_blank" class="register__button">
+            РЕЄСТРАЦІЯ
+        </a>
 	</header>
 
 </div>
@@ -59,7 +60,7 @@
         <div class="schedule__info">
             <div class="schedule__info-time">10:45</div>
             <div class="schedule__info-text">
-                <img class="unlock" src="images/unlock.png">
+                <img class="unlock" src="images/icons/Unlc.png">
                 <span class="text">Открытие</span>
             </div>
         </div>
@@ -147,7 +148,7 @@
         <div class="schedule__info">
             <div class="schedule__info-time">18:00</div>
             <div class="schedule__info-text">
-                <img class="unlock" src="images/unlock.png">
+                <img class="lock" src="images/icons/lock.png">
                 <span class="text">Закрытие</span>
             </div>
         </div>
@@ -405,7 +406,7 @@ function myMap() {
   var mapCanvas = document.getElementById("map");
   var mapOptions = {center: myCenter, zoom: 17};
   var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({position:myCenter, icon:'images/pin.png'});
+  var marker = new google.maps.Marker({position:myCenter, icon:'images/icons/pin.png'});
   marker.setMap(map);
 }
 </script>

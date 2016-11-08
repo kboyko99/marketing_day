@@ -1,4 +1,4 @@
-$footer-color: /*#000e1d*/lightgray;
+$footer-color: /*#000e1d*/#EBECE7;
 $schedule-background: #09ABE2;
 $page-background: white;
 body{
@@ -41,20 +41,13 @@ html {
     top: 0;
     width: 100%;}
 header {
-    color: black;}
-.logo{
-  position: absolute;
-  left: 10vw;
-  top: 10vh;
-  width: 20vw;
-  height: auto;
-  z-index: 3;
-}
+    color: white;}
+
 nav {
   position: relative;
-  top: 13vh;
-  right: 10vw;
-    float: right;
+  padding-top: 5vh;
+  font-size: 1.5vw;
+    float: none;
     text-align: center;}
 
 .nav__links {
@@ -63,43 +56,57 @@ nav {
     color: #ECF0F1;
     padding: 16px;
     display: inline-block;}
-.head__title {
+.title {
   position: absolute;
-  background: linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5)) ;
   z-index: 3;
   font-size: 250%;
   width: 100%;
-  top: 35vh;
-  padding: 5vh 0;}
+  margin-top: 15vh;
+}
+.head__title{
+    border: 0.5vh solid white;
 
+  background: linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5)) ;
+  padding: 5vh 5vw;
+  width: 25vw;
+  height: 35vh;
+  max-height: 22vw;
+  &.heading{
+    margin-left: 10%;
+  }
+  &.information{
+    margin-top: -45vh;
+    margin-left: 55vw; 
+    .logo, .date{
+      border: none;
+      background: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: auto;
+    }
+    .date{
+      font-size: 2.5vw;
+    }
+
+  }
+}
 .head__title h1 {
     margin: 0;
-    font-size: 180%;}
+    font-size: 5vw;}
 
 .head__title__city {
     margin: 2vh 0; 
-    font-size: 80%;}
-
-
-.head-registration{
-  position: relative;
-  top: 80vh;
-}
-.date{
-  margin: 2vh 0;
-  font-size: 50%;
-}
+    font-size: 3vw;}
 .register__button {
-  position: absolute;
-  z-index: 3;
+  z-index: 99;
   min-width: 10vw;
-  margin-top: 7vh; 
-  left: 40vw;
-  border: 2px solid #ECF0F1;
-  color: #ECF0F1;
+  margin-top: 67vh; 
+  border: 0.5vh solid white;
+  color: white;
   background-color: transparent;
-  padding: 2.5vh 2.5vw; 
-  font-size: 120%;
+  padding: 2.5vh 2.5vw;
+  font-size: 2vw;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -113,15 +120,15 @@ nav {
   transition-property: color,background-color;
   cursor: pointer;
   &.down{
-    color: $page-background;
-    border-color: $page-background;
+    color: $schedule-background;
+    border-color: $schedule-background;
     border-width: 1vh;
     font-weight: bold;
     left: inherit;
     min-width: 20vw; 
-    top: 20vh;
     width: 20vw;
     right: 25%;
+    margin: 25vh;
   }
 }
 .register__button:focus,.register__button:hover, .social-link:focus, .social-link:hover{
@@ -140,7 +147,7 @@ nav {
     outline: 0;
     text-decoration: none;
     &.down{
-      color: $page-background;
+      color: $schedule-background;
     }
 }
 .schedule {
@@ -222,9 +229,9 @@ nav {
       width: 205px;
       height: 56px;
       line-height: 56px;
-      background: url("../images/connector-1_blue.png") no-repeat 100% 50% #1DB3E6; }
+      background: url("../images/icons/connector-1_blue.png") no-repeat 100% 50% #1DB3E6; }
       .schedule__info-time--hatching {
-        background: url("../images/connector-hatching.png") no-repeat 100% 50% #1DB3E6; }
+        background: url("../images/icons/connector-hatching.png") no-repeat 100% 50% #1DB3E6; }
       @media screen and (max-width: 720px) {
         .schedule__info-time {
           width: 100px;
@@ -249,7 +256,7 @@ nav {
         .schedule__info-text {
           font-size: 13px; } }
       .schedule__info-text--hatching {
-        background: url("../images/hatching.png") repeat -1px 0 #089DD1; }
+        background: url("../images/icons/hatching.png") repeat -1px 0 #089DD1; }
         @media screen and (max-width: 720px) {
           .schedule__info-text--hatching {
             white-space: nowrap;
@@ -264,21 +271,21 @@ nav {
         .schedule__info-text-icon.form {
           width: 34px;
           height: 37px;
-          background: url("../images/form.png") no-repeat 0 0; }
+          background: url("../images/icons/form.png") no-repeat 0 0; }
 
         .schedule__info-text-icon.cup {
           width: 41px;
           height: 41px;
-          background: url("../images/cup.png") no-repeat 0 0; }
+          background: url("../images/icons/cup.png") no-repeat 0 0; }
         .schedule__info-text-icon.key {
           width: 38px;
           height: 38px;
-          background: url("../images/key.png") no-repeat 0 0; }
+          background: url("../images/icons/key.png") no-repeat 0 0; }
         .schedule__info-text-icon.dinner {
           width: 34px;
           height: 32px;
-          background: url("../images/dinner.png") no-repeat 0 0; }
-  .unlock{
+          background: url("../images/icons/dinner.png") no-repeat 0 0; }
+  .unlock, .lock{
     width: 40px;
     padding-top: 8px;
     }
@@ -297,7 +304,7 @@ nav {
       width: 185px;
       height: 56px;
       line-height: 56px;
-      background: url("../images/connector-2.png") no-repeat 100% 50% #fff; }
+      background: url("../images/icons/connector-2.png") no-repeat 100% 50% #fff; }
       @media screen and (max-width: 720px) {
         .schedule__report-time {
           width: 80px;
@@ -526,7 +533,7 @@ h2, h3{
 .fullwidth_header,.head-moto {
     font-family: 'Roboto Slab',serif;
     text-align: center;
-    color: #ECF0F1
+    color: $schedule-background;
 }
 
 .container-hd {
@@ -545,7 +552,7 @@ h2, h3{
     padding: 2%;
     margin: 0;
     letter-spacing: 3px;
-    background-color: rgba(41,128,185,.99)
+    background-color: $footer-color;
 }
 
 #map{
@@ -555,9 +562,7 @@ h2, h3{
 }
 
 .place-layout{
-  position: relative;
-  top: 30vh;
-  height: 70vh;
+  height: auto;
 }
 .place-address{
   font-style: normal;
@@ -568,10 +573,7 @@ h2, h3{
 .partner-block,.partner-img,.partner-moto,.partner-name,.partners {
     text-align: center
 }
-.partners-layout{
-    position: relative;
-  top: 50vh;
-}
+
 .partner-block,.social-link {
     display: inline-block;
     vertical-align: top
@@ -620,9 +622,9 @@ h2, h3{
     display: table
 }
 .organizers-layout{
-  position: relative;
-  top: 50vh;
-  height: 80vh;
+  margin-top: 10vh;
+  height: auto;
+  min-height: 110vh;
 }
 .organizer{
   &.first{
@@ -695,7 +697,7 @@ h2, h3{
     line-height: 68px;
     width: 53%;
     text-decoration: none;
-    color: #ECF0F1;
+    color: $schedule-background;
     margin-left: 5px;
     span{
       margin-left: 0px;
@@ -729,7 +731,6 @@ footer {
     background-color: $footer-color;
     overflow: hidden;
     position: relative;
-    margin-top: 46%;
     height:90vh;
 }
 .footer{
@@ -769,7 +770,7 @@ footer {
     top: 0vh;
     right: 0vw;
   h2{
-    color: $page-background;
+    color: $schedule-background;
     position: absolute;
     left: inherit;
     width: 20vw;

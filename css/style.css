@@ -40,21 +40,13 @@ html {
   width: 100%; }
 
 header {
-  color: black; }
-
-.logo {
-  position: absolute;
-  left: 10vw;
-  top: 10vh;
-  width: 20vw;
-  height: auto;
-  z-index: 3; }
+  color: white; }
 
 nav {
   position: relative;
-  top: 13vh;
-  right: 10vw;
-  float: right;
+  padding-top: 5vh;
+  font-size: 1.5vw;
+  float: none;
   text-align: center; }
 
 .nav__links {
@@ -64,42 +56,52 @@ nav {
   padding: 16px;
   display: inline-block; }
 
-.head__title {
+.title {
   position: absolute;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
   z-index: 3;
   font-size: 250%;
   width: 100%;
-  top: 35vh;
-  padding: 5vh 0; }
+  margin-top: 15vh; }
+
+.head__title {
+  border: 0.5vh solid white;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  padding: 5vh 5vw;
+  width: 25vw;
+  height: 35vh;
+  max-height: 22vw; }
+  .head__title.heading {
+    margin-left: 10%; }
+  .head__title.information {
+    margin-top: -45vh;
+    margin-left: 55vw; }
+    .head__title.information .logo, .head__title.information .date {
+      border: none;
+      background: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: auto; }
+    .head__title.information .date {
+      font-size: 2.5vw; }
 
 .head__title h1 {
   margin: 0;
-  font-size: 180%; }
+  font-size: 5vw; }
 
 .head__title__city {
   margin: 2vh 0;
-  font-size: 80%; }
-
-.head-registration {
-  position: relative;
-  top: 80vh; }
-
-.date {
-  margin: 2vh 0;
-  font-size: 50%; }
+  font-size: 3vw; }
 
 .register__button {
-  position: absolute;
-  z-index: 3;
+  z-index: 99;
   min-width: 10vw;
-  margin-top: 7vh;
-  left: 40vw;
-  border: 2px solid #ECF0F1;
-  color: #ECF0F1;
+  margin-top: 67vh;
+  border: 0.5vh solid white;
+  color: white;
   background-color: transparent;
   padding: 2.5vh 2.5vw;
-  font-size: 120%;
+  font-size: 2vw;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -113,15 +115,15 @@ nav {
   transition-property: color,background-color;
   cursor: pointer; }
   .register__button.down {
-    color: white;
-    border-color: white;
+    color: #09ABE2;
+    border-color: #09ABE2;
     border-width: 1vh;
     font-weight: bold;
     left: inherit;
     min-width: 20vw;
-    top: 20vh;
     width: 20vw;
-    right: 25%; }
+    right: 25%;
+    margin: 25vh; }
 
 .register__button:focus, .register__button:hover, .social-link:focus, .social-link:hover {
   -webkit-animation-name: hvr-back-pulse;
@@ -139,7 +141,7 @@ nav {
   outline: 0;
   text-decoration: none; }
   .register__button:focus.down, .register__button:hover.down, .social-link:focus.down, .social-link:hover.down {
-    color: white; }
+    color: #09ABE2; }
 
 .schedule {
   margin: -150px 0 0;
@@ -232,10 +234,10 @@ nav {
   width: 205px;
   height: 56px;
   line-height: 56px;
-  background: url("../images/connector-1_blue.png") no-repeat 100% 50% #1DB3E6; }
+  background: url("../images/icons/connector-1_blue.png") no-repeat 100% 50% #1DB3E6; }
 
 .schedule__info-time--hatching {
-  background: url("../images/connector-hatching.png") no-repeat 100% 50% #1DB3E6; }
+  background: url("../images/icons/connector-hatching.png") no-repeat 100% 50% #1DB3E6; }
 
 @media screen and (max-width: 720px) {
   .schedule__info-time {
@@ -262,7 +264,7 @@ nav {
     font-size: 13px; } }
 
 .schedule__info-text--hatching {
-  background: url("../images/hatching.png") repeat -1px 0 #089DD1; }
+  background: url("../images/icons/hatching.png") repeat -1px 0 #089DD1; }
 
 @media screen and (max-width: 720px) {
   .schedule__info-text--hatching {
@@ -281,24 +283,24 @@ nav {
 .schedule__info-text-icon.form {
   width: 34px;
   height: 37px;
-  background: url("../images/form.png") no-repeat 0 0; }
+  background: url("../images/icons/form.png") no-repeat 0 0; }
 
 .schedule__info-text-icon.cup {
   width: 41px;
   height: 41px;
-  background: url("../images/cup.png") no-repeat 0 0; }
+  background: url("../images/icons/cup.png") no-repeat 0 0; }
 
 .schedule__info-text-icon.key {
   width: 38px;
   height: 38px;
-  background: url("../images/key.png") no-repeat 0 0; }
+  background: url("../images/icons/key.png") no-repeat 0 0; }
 
 .schedule__info-text-icon.dinner {
   width: 34px;
   height: 32px;
-  background: url("../images/dinner.png") no-repeat 0 0; }
+  background: url("../images/icons/dinner.png") no-repeat 0 0; }
 
-.unlock {
+.unlock, .lock {
   width: 40px;
   padding-top: 8px; }
 
@@ -319,7 +321,7 @@ nav {
   width: 185px;
   height: 56px;
   line-height: 56px;
-  background: url("../images/connector-2.png") no-repeat 100% 50% #fff; }
+  background: url("../images/icons/connector-2.png") no-repeat 100% 50% #fff; }
 
 @media screen and (max-width: 720px) {
   .schedule__report-time {
@@ -551,7 +553,7 @@ h2, h3 {
 .fullwidth_header, .head-moto {
   font-family: 'Roboto Slab',serif;
   text-align: center;
-  color: #ECF0F1; }
+  color: #09ABE2; }
 
 .container-hd {
   width: 1080px;
@@ -566,7 +568,7 @@ h2, h3 {
   padding: 2%;
   margin: 0;
   letter-spacing: 3px;
-  background-color: rgba(41, 128, 185, 0.99); }
+  background-color: #EBECE7; }
 
 #map {
   width: 100%;
@@ -574,9 +576,7 @@ h2, h3 {
   pointer-events: none; }
 
 .place-layout {
-  position: relative;
-  top: 30vh;
-  height: 70vh; }
+  height: auto; }
 
 .place-address {
   font-style: normal;
@@ -585,10 +585,6 @@ h2, h3 {
 
 .partner-block, .partner-img, .partner-moto, .partner-name, .partners {
   text-align: center; }
-
-.partners-layout {
-  position: relative;
-  top: 50vh; }
 
 .partner-block, .social-link {
   display: inline-block;
@@ -630,9 +626,9 @@ h2, h3 {
   display: table; }
 
 .organizers-layout {
-  position: relative;
-  top: 50vh;
-  height: 80vh; }
+  margin-top: 10vh;
+  height: auto;
+  min-height: 110vh; }
 
 .organizer.first {
   text-align: -webkit-left;
@@ -687,7 +683,7 @@ h2, h3 {
   line-height: 68px;
   width: 53%;
   text-decoration: none;
-  color: #ECF0F1;
+  color: #09ABE2;
   margin-left: 5px; }
   .social-link span {
     margin-left: 0px;
@@ -712,10 +708,9 @@ h2, h3 {
   top: 20px; }
 
 footer {
-  background-color: lightgray;
+  background-color: #EBECE7;
   overflow: hidden;
   position: relative;
-  margin-top: 46%;
   height: 90vh; }
 
 .footer {
@@ -734,7 +729,7 @@ footer {
   top: 44vh; }
 
 .social-links {
-  background-color: lightgray;
+  background-color: #EBECE7;
   float: left;
   line-height: 62px;
   text-align: center;
@@ -752,7 +747,7 @@ footer {
   top: 0vh;
   right: 0vw; }
   .registration h2 {
-    color: white;
+    color: #09ABE2;
     position: absolute;
     left: inherit;
     width: 20vw;
