@@ -29,6 +29,7 @@ html {
 .head-layout {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/background.png") no-repeat center center;
+  background-color: #09AEE6;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
