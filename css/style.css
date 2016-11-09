@@ -25,43 +25,28 @@ html {
 
 .head-layout {
   position: relative;
-  background: url("../images/background.png") no-repeat center center;
-  -webkit-background-size: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/background.png") no-repeat center center;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
+  max-height: 98vw;
   height: 160vh;
-  font-family: 'MyCoco'; }
-
-.head-layout:after {
-  background: transparent;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0.1)));
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
-  content: "";
-  display: block;
-  height: 160vh;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%; }
-
-header {
+  font-family: 'MyCoco';
   color: white; }
 
-nav {
+@media screen and (max-width: 720px) {
+  .head-layout {
+    max-height: 170vw;
+    height: 170vw; } }
+
+.navigation {
   position: relative;
-  padding: 2vh 0vw;
+  padding: 1.5vw 0vw;
   font-size: 1.5vw;
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
   float: none;
-  text-align: center; }
-
-.navigation {
+  text-align: center;
   padding-top: 2.5vh; }
 
 .nav__links {
@@ -76,32 +61,42 @@ nav {
   z-index: 3;
   font-size: 250%;
   width: 100%;
-  margin-top: 5vh;
+  margin-top: 5%;
   padding: 7.5vh 0vw;
   max-height: 22vw; }
+
+@media screen and (max-width: 800px) {
+  .head__title {
+    padding-bottom: 35vh;
+    margin-top: 20%; } }
 
 .logo {
   width: 40vw;
   height: auto;
-  padding: 5vh 5vw;
+  padding: 5vh 5vw 5vh 5vw;
   margin: 0vh 0vw 0vh -50vw;
   background: none; }
 
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 70%;
+    margin: 0 auto; } }
+
 .information {
-  margin-top: -55vh;
   margin-left: 55vw;
   padding: 10vh 5vw 5vh;
   color: #024761;
-  line-height: 10vh; }
+  line-height: 5vw;
+  margin-top: -30vw; }
   .information .geostasis {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     width: 37vw;
-    line-height: 5vh; }
+    line-height: 3vw; }
   .information h1 {
     font-size: 10vw;
     margin: 0;
-    line-height: 21vh; }
+    line-height: 10vw; }
   .information h2 {
     margin: 0;
     font-size: 5vw; }
@@ -127,14 +122,14 @@ nav {
   font-size: 3vw; }
 
 .register__button {
-  z-index: 99;
+  z-index: 999;
   min-width: 10vw;
   width: 25vw;
   margin-top: 5vh;
   border: 0.5vh solid white;
   color: white;
   background-color: transparent;
-  padding: 2.5vh 2.5vw;
+  padding: 1vw 2.5vw;
   font-size: 2vw;
   display: inline-block;
   vertical-align: middle;
@@ -148,11 +143,20 @@ nav {
   transition-duration: .5s;
   transition-property: color,background-color, border;
   cursor: pointer;
-  font-weight: bold; }
-  .register__button.down {
-    border: 1.5vh solid rgba(255, 255, 255, 0.5);
-    min-width: 20vw;
-    width: 20vw; }
+  font-weight: bold;
+  border: 1vw solid rgba(255, 255, 255, 0.5);
+  min-width: 20vw;
+  width: 20vw; }
+
+@media screen and (max-width: 800px) {
+  .information {
+    margin: 0 auto;
+    padding: 0; }
+  .register__button {
+    margin-top: 15%; }
+    .register__button.down {
+      padding: 2vh 10vw;
+      margin-top: 0; } }
 
 .register__button:focus, .register__button:hover {
   -webkit-animation-name: hvr-back-pulse;
@@ -168,18 +172,14 @@ nav {
   background-color: rgba(255, 255, 255, 0.35);
   color: #ECF0F1;
   outline: 0;
-  text-decoration: none; }
-  .register__button:focus.down, .register__button:hover.down {
-    border: 1.5vh solid white;
-    color: white; }
-
-.schedule {
-  margin: -150px 0 0;
-  padding-top: 480px; }
+  text-decoration: none;
+  border: 1vw solid rgba(255, 255, 255, 0.8);
+  color: white; }
 
 .schedule__inner {
   width: 100%;
-  margin: 0 auto;
+  margin: -1vh auto;
+  padding: 1vh 0vw;
   background: #09AEE6 no-repeat 50% 0; }
 
 .schedule__content {
@@ -242,21 +242,6 @@ nav {
   background: url("../images/schedule_bottom.png") no-repeat 50% 100%;
   z-index: 999; }
 
-.footer__top-bg {
-  position: relative;
-  height: 309px;
-  width: 100%;
-  margin-top: -1vh;
-  background: url("../images/footer_top.png") no-repeat 50% 100%;
-  z-index: 999; }
-
-.footer__bottom-bg {
-  margin-top: -10vh;
-  height: 309px;
-  width: 100%;
-  background: url("../images/footer_bottom.png") no-repeat 50% 100%;
-  z-index: 999; }
-
 .schedule__info {
   display: -webkit-box;
   display: -webkit-flex;
@@ -309,35 +294,30 @@ nav {
 .schedule__info-text--with-margin {
   margin-right: 13px; }
 
-.schedule__info-text-icon {
+/*.schedule__info-text-icon {
   display: inline-block;
   margin: -4px 10px 0 0;
   vertical-align: middle; }
-
 .schedule__info-text-icon.form {
   width: 34px;
   height: 37px;
   background: url("../images/icons/form.png") no-repeat 0 0; }
-
 .schedule__info-text-icon.cup {
   width: 41px;
   height: 41px;
   background: url("../images/icons/cup.png") no-repeat 0 0; }
-
 .schedule__info-text-icon.key {
   width: 38px;
   height: 38px;
   background: url("../images/icons/key.png") no-repeat 0 0; }
-
 .schedule__info-text-icon.dinner {
   width: 34px;
   height: 32px;
   background: url("../images/icons/dinner.png") no-repeat 0 0; }
-
-.unlock, .lock {
+.unlock, .lock{
   width: 40px;
-  padding-top: 8px; }
-
+  padding-top: 8px;
+  }*/
 .schedule__reporter {
   color: #666666; }
 
@@ -362,7 +342,7 @@ nav {
     padding-left: 5px;
     font-size: 2vw; } }
 
-.schedule__report-hall-a, .schedule__report-hall-b, .schedule__report-hall-c {
+.schedule__report-hall-a, .schedule__report-hall-b {
   padding: 25px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -579,12 +559,7 @@ nav {
   font-style: oblique;
   font-weight: 900; }
 */
-h2, h3 {
-  font-family: 'MyCoco'; }
-
 .fullwidth_header, .head-moto {
-  font-family: 'MyCoco';
-  text-align: center;
   color: #09AEE6; }
 
 .container-hd {
@@ -632,10 +607,9 @@ h2, h3 {
   margin: 0 auto;
   padding: 0 11px 4px;
   vertical-align: bottom;
-  height: 65px; }
-
-.partner-img img {
-  max-height: 65px; }
+  /*height: 65px*/ }
+  .partner-img img {
+    width: 14vw; }
 
 .partner-link {
   cursor: pointer;
@@ -655,7 +629,12 @@ h2, h3 {
 .organizers-layout {
   margin-top: 10vh;
   height: auto;
-  min-height: 110vh; }
+  min-height: 120vh; }
+
+@media screen and (max-width: 1400px) {
+  .organizers-layout {
+    min-height: 80vw;
+    max-height: 100vw; } }
 
 .organizer.first {
   text-align: -webkit-left;
@@ -668,7 +647,7 @@ h2, h3 {
 
 .organizer.second {
   text-align: -webkit-right;
-  margin-top: 20vh;
+  margin-top: 15vw;
   right: 10vw; }
   .organizer.second div.name {
     margin-top: -18vw;
@@ -677,8 +656,8 @@ h2, h3 {
     margin-right: 25vw; }
 
 .organizer .photo {
-  width: 20vw;
-  height: 20vw; }
+  width: 18vw;
+  height: 18vw; }
   .organizer .photo img {
     width: 100%;
     height: auto;
@@ -688,7 +667,7 @@ h2, h3 {
 .organizer .name {
   color: black;
   position: relative;
-  font-size: 2.5vw; }
+  font-size: 2.25vw; }
 
 .organizer .contacts a i {
   color: black;
@@ -736,7 +715,7 @@ h2, h3 {
   width: 35vw;
   font-size: 1.5vw;
   margin-top: -40vh;
-  margin-left: 65vw; }
+  margin-left: 60vw; }
 
 .social-icons.vk {
   height: 28px;
@@ -755,6 +734,21 @@ footer {
   width: 100%;
   z-index: 10; }
 
+.footer__top-bg {
+  position: relative;
+  height: 309px;
+  width: 100%;
+  margin-top: -1vh;
+  background: url("../images/footer_top.png") no-repeat 50% 100%;
+  z-index: 999; }
+
+.footer__bottom-bg {
+  margin-top: -10vh;
+  height: 309px;
+  width: 100%;
+  background: url("../images/footer_bottom.png") no-repeat 50% 100%;
+  z-index: 999; }
+
 .copy {
   float: none;
   line-height: 62px;
@@ -769,3 +763,24 @@ footer {
   padding: 0 0 0 5vw; }
   .registration h1 {
     font-size: 4.25vw; }
+
+@media screen and (max-width: 800px) {
+  .registration {
+    width: 100%;
+    margin-top: -25vh;
+    padding: 0; }
+    .registration h1 {
+      font-size: 6.25vw; }
+  .social-links {
+    width: 100%;
+    margin: 10vh 0 0 0; }
+    .social-links h2 {
+      font-size: 4vw; }
+  .social-icons {
+    padding: 2vh 2vw; }
+  .social-link {
+    font-size: 3.5vw; }
+  .social-link span {
+    padding: 2vh 10vw; }
+  .blank {
+    display: none; } }
