@@ -17,6 +17,9 @@ html {
   font-weight: bold;
   font-family: 'MyCoco'; }
 
+@media (max-width: 510px) {
+  font-size: 3.5vw; }
+
 .contact-info a, .nav__links, .register__button, .speaker__link {
   text-decoration: none; }
 
@@ -200,7 +203,7 @@ html {
 @media screen and (max-width: 720px) {
   .schedule__hall-titles {
     margin-left: 100px;
-    font-size: 2vw; } }
+    font-size: 3.5vw; } }
 
 .schedule__hall-title-a, .schedule__hall-title-b {
   width: 50%;
@@ -263,7 +266,8 @@ html {
 @media screen and (max-width: 720px) {
   .schedule__info-time {
     width: 100px;
-    padding-left: 5px; } }
+    padding-left: 5px;
+    font-size: 3.5vw; } }
 
 .schedule__info-text {
   -webkit-box-flex: 1;
@@ -280,7 +284,7 @@ html {
 
 @media screen and (max-width: 720px) {
   .schedule__info-text {
-    font-size: 2vw; } }
+    font-size: 3.5vw; } }
 
 .schedule__info-text--hatching {
   background: url("../images/icons/hatching.png") repeat -1px 0 #089DD1; }
@@ -340,7 +344,7 @@ html {
   .schedule__report-time {
     width: 80px;
     padding-left: 5px;
-    font-size: 2vw; } }
+    font-size: 3.5vw; } }
 
 .schedule__report-hall-a, .schedule__report-hall-b {
   padding: 25px;
@@ -367,7 +371,7 @@ html {
 
 @media screen and (max-width: 720px) {
   .schedule__report-hall-a, .schedule__report-hall-b, .schedule__report-hall-c {
-    font-size: 2vw; } }
+    font-size: 3.5vw; } }
 
 .schedule__report-hall-a {
   margin-right: 13px; }
@@ -564,7 +568,7 @@ html {
 
 .container-hd {
   width: 1080px;
-  margin: 0 auto; }
+  margin: 5vh auto; }
 
 @media screen and (max-width: 1090px) {
   .container-hd {
