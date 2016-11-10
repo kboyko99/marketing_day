@@ -46,7 +46,7 @@ html {
 
 .navigation {
   position: relative;
-  padding: 1.5vw 0vw;
+  padding: 0vw 0vw;
   font-size: 1.5vw;
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
   float: none;
@@ -65,9 +65,9 @@ html {
   z-index: 3;
   font-size: 250%;
   width: 100%;
-  margin-top: 5%;
+  margin-top: 7%;
   padding: 5vh 0vw;
-  max-height: 22vw; }
+  max-height: 18vw; }
 
 @media screen and (max-width: 800px) {
   .head__title {
@@ -75,37 +75,37 @@ html {
     margin-top: 20%; } }
 
 .logo {
-  width: 40vw;
+  width: 30vw;
   height: auto;
   padding: 5vh 5vw 5vh 5vw;
-  margin: 0vh 0vw 0vh -50vw;
+  margin: 0vh 0vw 0vh -45vw;
   background: none; }
 
 @media screen and (max-width: 800px) {
   .logo {
-    width: 70%;
+    width: 50%;
     margin: 0 auto; } }
 
 .information {
-  margin-left: 55vw;
+  margin-left: 40vw;
   padding: 10vh 5vw 5vh;
   color: #024761;
-  line-height: 5vw;
-  margin-top: -30vw; }
+  line-height: 3vw;
+  margin-top: -25vw; }
   .information .geostasis {
     margin: 0 auto;
     padding: 0;
     width: 37vw;
-    line-height: 3vw; }
+    line-height: 2vw; }
   .information h1 {
-    font-size: 10vw;
+    font-size: 7vw;
     margin: 0;
     line-height: 10vw; }
   .information h2 {
     margin: 0;
-    font-size: 5vw; }
+    font-size: 3.5vw; }
   .information span {
-    font-size: 2.5vw; }
+    font-size: 2vw; }
     .information span.month {
       font-weight: bold; }
   .information h1, .information h2, .information h3, .information span, .information .geostasis {
@@ -129,7 +129,7 @@ html {
   z-index: 999;
   min-width: 10vw;
   width: 25vw;
-  margin-top: 5vh;
+  margin-top: 6vh;
   border: 0.5vh solid white;
   color: white;
   background-color: transparent;
@@ -148,7 +148,7 @@ html {
   transition-property: color,background-color, border;
   cursor: pointer;
   font-weight: bold;
-  border: 1vw solid rgba(255, 255, 255, 0.5);
+  border: 0.5vw solid rgba(255, 255, 255, 0.5);
   min-width: 20vw;
   width: 20vw; }
 
@@ -177,7 +177,7 @@ html {
   color: #ECF0F1;
   outline: 0;
   text-decoration: none;
-  border: 1vw solid rgba(255, 255, 255, 0.8);
+  border: 0.5vw solid rgba(255, 255, 255, 0.8);
   color: white; }
 
 .schedule__inner {
