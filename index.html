@@ -5,30 +5,32 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Digital Marketing day</title>
+    <title>Digital Marketing Day</title>
 <!--     <link href="https://fonts.googleapis.com/css?family=PT+Serif|Cinzel|Roboto|Ubuntu" rel="stylesheet"> -->  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="scripts/smooth-scroll.min.js"></script>
+<!--     <script src="scripts/smooth-scroll.min.js"></script> -->
 </head>
 <body>
 
 
+<header>
+<div class="head-layout" id="main">
 
-<div class="head-layout">
     <div class="navigation">
-        <a class="nav__links" href="../">Головна</a>
+        <a href="" target="_blank" class="register__button nav">РЕЄСТРАЦІЯ</a>
+        <a class="nav__links" href="#main">Головна</a>
         <a data-scroll="" class="nav__links" href="#schedule">Розклад</a>
         <a data-scroll="" class="nav__links place" href="#place">Місце</a>
-        <a data-scroll="" class="nav__links partners" href="#partners">Партнери</a>
+        <!-- <a data-scroll="" class="nav__links partners" href="#partners">Партнери</a> -->
         <a data-scroll="" class="nav__links organizers" href="#organizers">Організатори</a>
         <a data-scroll="" class="nav__links contacts" href="#contacts">Контакти</a>
     </div>
     <div class="head__title">
         <img src="images/logo.png" class="head__title logo">
         <div class="information">
-	        <h1>Digital</h1>
+            <h1>Digital</h1>
             <h2> Marketing Day</h2>
             <div class="geostasis">
                 <span class="head__title__city month">Кропивницький</span><br>
@@ -36,18 +38,29 @@
             </div>
         </div>
     </div>
+
+    <div class="discription-layout">
+        <div class="discription__content">
+            <p>
+                Перший маркетинговий захід в нашому місті. Можливість познайомити та об’єднати всіх, хто працює, цікавиться і планує зайнятися інтернет-маркетингом.
+            </p>
+            <br>
+                <span class="number">2</span><span> паралельних потоки, </span><span class="number">9</span><span> спікерів,</span><span class="number"> 5</span><span> годин корисної інформації.</span>
+        </div>
+    </div>
     <a href="" target="_blank" class="register__button">
         РЕЄСТРАЦІЯ
     </a>
 </div>
+</header>
 
-<div class="schedule__inner" id="schedule">
-    <div class="schedule__title">Розклад</div>
+<div class="schedule__inner" >
+    <div class="schedule__title" id="schedule">Розклад</div>
     <div class="schedule__content">
-        <div class="schedule__hall-titles">
+<!--         <div class="schedule__hall-titles">
             <div class="schedule__hall-title-a">Зала A</div>
-<!--             <div class="schedule__hall-title-b">Зала B</div> -->        
-        </div>
+            <div class="schedule__hall-title-b">Зала B</div>    
+        </div> -->
 
         <div class="schedule__info">
             <div class="schedule__info-time number">9:30</div>
@@ -101,7 +114,7 @@
             <div class="schedule__info-time number">13:00</div>
             <div class="schedule__info-text">
 <!--                 <span class="schedule__info-text-icon dinner"></span> -->
-                Обед
+                Обід
             </div>
         </div>
 
@@ -115,7 +128,7 @@
         <div class="schedule__report">
             <div class="schedule__report-time number">14:45</div>
             <div class="schedule__report-hall-a">
-                 Как настроить таргетированну рекламу в FB с ROI 120%
+                 Как настроить таргетированную рекламу в FB с ROI<span class="number"> 120%</span>
                 <div class="schedule__reporter">Максим Аненко</div>
             </div>
         </div>
@@ -152,10 +165,10 @@
     </div>
     <div class="schedule__bottom-bg"></div>
 </div>
-	<!-- <div class="stripe-holder">
+    <!-- <div class="stripe-holder">
         <div class="option-num blue">
             <div class="time-holder">2:55</div>
-        	<div class="triangle"><div class="t-blue"></div></div>
+            <div class="triangle"><div class="t-blue"></div></div>
         </div>
         <div class="perehod cyan"><div class="t-cyan"></div></div>
         <div class="stripe-content sky">
@@ -201,7 +214,7 @@
             <div class="time-holder">2:55</div>
             <div class="triangle"><div class="t-white"></div></div>
         </div>
-	    <div class="perehod silver"><div class="t-silver"></div></div>
+        <div class="perehod silver"><div class="t-silver"></div></div>
         <div class="stripe-content grey">
             <div class="content-text">
                 <h2>Современные SEO стратегии</h2>
@@ -245,7 +258,7 @@
     <div class="stripe-holder">
         <div class="option-num dark-grey">
             <div class="time-holder">2:55</div>
-            <div class="triangle"><div class="t-dark-grey"></div></div>	
+            <div class="triangle"><div class="t-dark-grey"></div></div> 
         </div>
         <div class="perehod black"><div class="t-black"></div></div>
         <div class="perehod bottom"><div class="background"></div></div>
@@ -330,9 +343,22 @@
 
 <div class="organizers-layout" id="organizers"><h3 class="fullwidth_header">Організатори</h3>
     <div class="container-hd">
-        <div class="organizer first">
+        <div class="organizer left">
             <div class="photo">
-                <img src="images/organizers/dmytro.jpg">
+                <img src="images/organizers/tetyana.jpg">
+            </div>
+            <div class="name">
+                <span class="name">Тетяна Міняйчева</span>
+            </div>
+            <div class="contacts">
+                <a href="skype:...........?add" title="........"><i class="fa fa-skype"></i></a>
+                <a href="mailto:mtaniav.91@gmail.com" title="mtaniav.91@gmail.com"><i class="fa fa-envelope"></i></a>
+                <a href="tel:+380954848378" title="+380954848378"><i class="fa fa-mobile-phone"></i></a>
+            </div>
+        </div>
+        <div class="organizer right">
+            <div class="photo">
+                <img src="images/organizers/dmytro.png">
             </div>
             <div class="name">
                 <span class="name">Дмитро Богданов</span>
@@ -343,17 +369,17 @@
                 <a href="tel:+380954650411" title="+380954650411"><i class="fa fa-mobile-phone"></i></a>
             </div>
         </div>
-        <div class="organizer second">
+        <div class="organizer left">
             <div class="photo">
-                <img src="images/speaker.png">
+                <img src="images/organizers/ira.jpg">
             </div>
             <div class="name">
-                <span class="name">Тетяна Міняйчева</span>
+                <span class="name">Ірина Іванова</span>
             </div>
             <div class="contacts">
-<!--                 <a href="skype:...........?add" title="........"><i class="fa fa-skype"></i></a> -->
-                <a href="mailto:mtaniav.91@gmail.com" title="mtaniav.91@gmail.com"><i class="fa fa-envelope"></i></a>
-                <a href="tel:+380954848378" title="+380954848378"><i class="fa fa-mobile-phone"></i></a>
+                <a href="skype:chudasiya?add" title="chudasiya"><i class="fa fa-skype"></i></a>
+                <a href="mailto:irakonstantinova10@gmail.com" title="irakonstantinova10@gmail.com"><i class="fa fa-envelope"></i></a>
+                <a href="tel:+380952409572" title="+380952409572"><i class="fa fa-mobile-phone"></i></a>
             </div>
         </div>
     </div>
@@ -369,7 +395,7 @@
     </div>
     <div class="social-links" id="contacts">
         <h2 class="">Знайди нас у соціальних мережах</h2>
-            <a target="_blank" class="social-link blank" href="vk"></a>
+            <!-- <a target="_blank" class="social-link blank" href="vk"></a> -->
             <a target="_blank" class="social-link" href="https://vk.com/kowohub">
                 <img class="social-icons vk" src="images/icons/vk-social-network-logo.png" alt="vk">
                 <span>Vkontakte</span>
@@ -383,12 +409,11 @@
                 <span>Instagram</span>
             </a>
             <a target="_blank" class="social-link" href="http://programming.kr.ua/subscriptions/">
-                <img class="social-icons emails" src="images/icons/envelope.png" alt="subscription">
+                <img class="social-icons emails" src="http://www.clker.com/cliparts/j/T/e/D/n/E/mail-icon-hi.png" alt="subscription">
                 <span>Підпишись на розсилку новин</span>
             </a>
 
     </div>
-    <!-- <div class="copy">2016</div> -->
     <div class="footer__bottom-bg"></div>
 </footer>
 

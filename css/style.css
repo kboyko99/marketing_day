@@ -26,8 +26,14 @@ html {
 .head-registration, .head__title, .place-address, .rwd-table tr td, .speaker, .speaker_photo, .speakers {
   text-align: center; }
 
-.head-layout {
+header {
   position: relative;
+  width: 100%;
+  max-height: 98vw;
+  height: 200vh; }
+
+.head-layout {
+  position: absolute;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/background.png") no-repeat center center;
   background-color: #09AEE6;
   -moz-background-size: cover;
@@ -35,23 +41,26 @@ html {
   background-size: cover;
   width: 100%;
   max-height: 98vw;
-  height: 160vh;
+  height: 200vh;
   font-family: 'MyCoco';
   color: white; }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
   .head-layout {
-    max-height: 170vw;
-    height: 170vw; } }
+    max-height: 230vw;
+    height: 230vw; } }
 
 .navigation {
-  position: relative;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
   padding: 0vw 0vw;
   font-size: 1.5vw;
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
   float: none;
   text-align: center;
-  padding-top: 2.5vh; }
+  /*padding-top: 2.5vh;*/ }
 
 .nav__links {
   position: relative;
@@ -75,7 +84,7 @@ html {
     margin-top: 20%; } }
 
 .logo {
-  width: 30vw;
+  width: 35vw;
   height: auto;
   padding: 5vh 5vw 5vh 5vw;
   margin: 0vh 0vw 0vh -45vw;
@@ -88,7 +97,7 @@ html {
 
 .information {
   margin-left: 40vw;
-  padding: 10vh 5vw 5vh;
+  padding: 6vh 5vw 5vh;
   color: #024761;
   line-height: 3vw;
   margin-top: -25vw; }
@@ -96,15 +105,17 @@ html {
     margin: 0 auto;
     padding: 0;
     width: 37vw;
-    line-height: 2vw; }
+    line-height: 1.6vw; }
   .information h1 {
     font-size: 7vw;
-    margin: 0;
-    line-height: 10vw; }
+    margin-top: 2vw;
+    line-height: 8vw;
+    margin-bottom: 0; }
   .information h2 {
     margin: 0;
     font-size: 3.5vw; }
   .information span {
+    margin: -2vw 0 0;
     font-size: 2vw; }
     .information span.month {
       font-weight: bold; }
@@ -130,7 +141,6 @@ html {
   min-width: 10vw;
   width: 25vw;
   margin-top: 6vh;
-  border: 0.5vh solid white;
   color: white;
   background-color: transparent;
   padding: 1vw 2.5vw;
@@ -151,6 +161,14 @@ html {
   border: 0.5vw solid rgba(255, 255, 255, 0.5);
   min-width: 20vw;
   width: 20vw; }
+  .register__button.nav {
+    font-size: inherit;
+    float: left;
+    padding: 0;
+    margin: 0.75vw 0 0 5vw;
+    border-width: 5px;
+    min-width: 15vw;
+    width: 15vw; }
 
 @media screen and (max-width: 800px) {
   .information {
@@ -179,17 +197,36 @@ html {
   text-decoration: none;
   border: 0.5vw solid rgba(255, 255, 255, 0.8);
   color: white; }
+  .register__button:focus.nav, .register__button:hover.nav {
+    border-width: 5px; }
+
+.discription-layout {
+  /*  background-color: $schedule-background;
+*/
+  margin: 25vh 0; }
+
+@media screen and (max-width: 800px) {
+  .discription-layout {
+    margin: 25vw 0; } }
+
+.discription__content {
+  /*  background-color: $schedule-background;
+*/
+  color: white;
+  width: 70%;
+  margin: 0vh auto;
+  font-size: 3vw; }
 
 .schedule__inner {
   width: 100%;
   margin: -1vh auto;
-  padding: 1vh 0vw;
+  padding: 40vh 0vw 0 0;
   background: #09AEE6 no-repeat 50% 0; }
 
 .schedule__content {
-  max-width: 80%;
-  margin: 0vh 10vw 50px 10vw;
-  font-size: 2vw; }
+  max-width: 70%;
+  margin: 0vh 15vw 50px 15vw;
+  font-size: 1.5vw; }
 
 .schedule__content:last-child {
   margin-bottom: 0; }
@@ -222,7 +259,7 @@ html {
 .schedule__title {
   letter-spacing: -3px;
   text-transform: uppercase;
-  font-size: 6vw;
+  font-size: 5vw;
   text-align: center;
   color: #fff;
   font-family: 'MyCoco';
@@ -244,7 +281,7 @@ html {
   height: 309px;
   width: 100%;
   background: url("../images/schedule_bottom.png") no-repeat 50% 100%;
-  z-index: 999; }
+  z-index: 9; }
 
 .schedule__info {
   display: -webkit-box;
@@ -569,14 +606,14 @@ html {
 
 .container-hd {
   width: 1080px;
-  margin: 5vh auto; }
+  margin: 1vh auto; }
 
 @media screen and (max-width: 1090px) {
   .container-hd {
     width: 95%; } }
 
 .fullwidth_header {
-  font-size: 210%;
+  font-size: 3.5vw;
   padding: 2%;
   margin: 0;
   letter-spacing: 3px;
@@ -634,35 +671,33 @@ html {
 .organizers-layout {
   margin-top: 10vh;
   height: auto;
-  min-height: 120vh; }
+  min-height: 140vh; }
 
 @media screen and (max-width: 1400px) {
   .organizers-layout {
-    min-height: 60vw;
+    min-height: 70vw;
     max-height: 100vw; } }
 
-.organizer.first {
-  text-align: -webkit-left;
-  margin-top: 10vh; }
-  .organizer.first div.name {
-    margin-top: -18vw;
-    margin-left: 21vw; }
-  .organizer.first div.contacts {
-    margin-left: 25vw; }
-
-.organizer.second {
-  text-align: -webkit-right;
-  margin-top: 15vw;
-  right: 10vw; }
-  .organizer.second div.name {
-    margin-top: -18vw;
-    margin-right: 21vw; }
-  .organizer.second div.contacts {
-    margin-right: 25vw; }
+.organizer {
+  margin: 5vw auto; }
+  .organizer div.name {
+    margin-top: -13vw; }
+  .organizer.left {
+    text-align: -webkit-left; }
+    .organizer.left div.name {
+      margin-left: 22vw; }
+    .organizer.left div.contacts {
+      margin-left: 25vw; }
+  .organizer.right {
+    text-align: -webkit-right; }
+    .organizer.right div.name {
+      margin-right: 22vw; }
+    .organizer.right div.contacts {
+      margin-right: 25vw; }
 
 .organizer .photo {
-  width: 18vw;
-  height: 18vw; }
+  width: 15vw;
+  height: auto; }
   .organizer .photo img {
     width: 100%;
     height: auto;
@@ -745,14 +780,14 @@ footer {
   width: 100%;
   margin-top: -1vh;
   background: url("../images/footer_top.png") no-repeat 50% 100%;
-  z-index: 999; }
+  z-index: 9; }
 
 .footer__bottom-bg {
   margin-top: -10vh;
   height: 309px;
   width: 100%;
   background: url("../images/footer_bottom.png") no-repeat 50% 100%;
-  z-index: 999; }
+  z-index: 9; }
 
 .copy {
   float: none;
@@ -778,7 +813,7 @@ footer {
       font-size: 6.25vw; }
   .social-links {
     width: 100%;
-    margin: 10vh 0 0 0; }
+    margin: 10vh 0 10vh 0; }
     .social-links h2 {
       font-size: 4vw; }
   .social-icons {
@@ -789,3 +824,7 @@ footer {
     padding: 2vh 10vw; }
   .blank {
     display: none; } }
+
+@media screen and (max-width: 700px) {
+  .social-links {
+    margin: 10vh 0 5vh 0; } }
