@@ -150,8 +150,8 @@ header{
   z-index: 999;
   min-width: 10vw;
   width: 25vw;
-  margin-top: 6vh; 
-  color: white;
+/*  margin-top: 6vh; 
+*/  color: white;
   background-color: transparent;
   padding: 1vw 2.5vw;
   font-size: 2vw;
@@ -216,26 +216,52 @@ header{
       border-width: 5px;
     }
 }
-.discription-layout{
+.description-layout{
 /*  background-color: $schedule-background;
 */  margin: 25vh 0;
 }
 @media screen and (max-width: 800px ){
-.discription-layout{
+.description-layout{
   margin: 25vw 0;
 }
 }
-.discription__content{
+.description__content{
 /*  background-color: $schedule-background;
 */  color: white;
   width: 70%;
   margin: 0vh auto;
   font-size: 3vw;
 }
+ul#countdown {
+  position: relative;
+  transform: translateY(-50%);
+  width: 70%;
+  margin: 15vw auto 0;
+  padding: 15px 0 20px 0;
+  color: #fff;
+  border: 1px solid $page-background;
+  border-width: 1px 0;
+  overflow: hidden;
+  li {
+    margin: 0 -3px 0 0;
+    padding: 0;
+    display: inline-block;
+    width: 10vw;
+    font-size: 4vw;
+    text-align: center;
+    
+    .label {
+      color: $page-background;
+      font-size: 18px;
+      font-size: 1.5vw;
+      text-transform: uppercase;
+    }
+  }
+}
 .schedule__inner {
   width: 100%;
     margin: -1vh auto;
-    padding: 40vh 0vw 0 0;
+    padding: 80vh 0vw 0 0;
       background: $schedule-background no-repeat 50% 0; }
 .schedule__content {
   max-width: 70%;
