@@ -34,9 +34,9 @@ html {
 }
 header{
   position: relative;
-    width: 100%;
- max-height: 98vw;
- height: 200vh;
+  width: 100%;
+  max-height: 98vw;
+  height: 200vh;
 }
 .head-layout {
   position: absolute;
@@ -51,7 +51,7 @@ header{
   font-family: 'MyCoco';
   color: white; }
 @media screen and (max-width: 800px) {
-  .head-layout {
+  header {
     max-height: 230vw;
     height: 230vw; 
 } }
@@ -65,26 +65,59 @@ header{
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
   float: none;
   text-align: center;
-  /*padding-top: 2.5vh;*/ }
+  /*padding-top: 2.5vh;*/ 
+}
 .nav__links {
     position: relative;
     z-index: 3;
     color: #ECF0F1;
+    margin-top: 0.5vw;
     padding: 16px;
-    display: inline-block;}
+    display: inline-block;
+    transition-duration: .5s;
+  transition-property: color,background-color, border;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 0px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+    cursor: pointer;
+  }
+.nav__links:hover, .nav__links:focus {
+    -webkit-animation-name: hvr-back-pulse;
+    animation-name: hvr-back-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: rgba(255,255,255,.35);
+    color: #ECF0F1;
+    /*outline: 0;*/
+    text-decoration: none;
+    /*border: 0.5vw solid rgba(255, 255, 255, 0.8);*/
+    color: white;
+   }
+
 .head__title {
   background: linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7)) ;
   z-index: 3;
   font-size: 250%;
   width: 100%;
-  margin-top: 7%;
+  margin-top: 13vw;
   padding: 5vh 0vw;
   max-height: 18vw;
 }
 @media screen and (max-width: 800px) {
   .head__title {
-  padding-bottom: 35vh;
+  padding-bottom: 45vh;
       margin-top: 20%;
+
 }}
 .logo {
   width: 35vw;
@@ -97,7 +130,7 @@ header{
     width: 50%;
     margin: 0 auto; 
 }}
-.information {
+.info {
   margin-left: 40vw;
   padding: 6vh 5vw 5vh;
   color: #024761;
@@ -173,9 +206,9 @@ header{
   width: 20vw;
   &.nav{
     font-size: inherit;
-    float: left;
+    float: right;
     padding: 0;
-    margin: 0.75vw 0 0 5vw;
+    margin: 1.5vw 7.5vw 0 0;
     border-width: 5px;
     min-width: 15vw;
     width: 15vw;
@@ -183,7 +216,7 @@ header{
 }
 
 @media screen and (max-width: 800px) {
-  .information {
+  .info{
     margin: 0 auto;
     padding: 0;
 }
@@ -230,7 +263,7 @@ header{
 */  color: white;
   width: 70%;
   margin: 0vh auto;
-  font-size: 3vw;
+  font-size: 2.25vw;
 }
 ul#countdown {
   position: relative;
@@ -260,13 +293,13 @@ ul#countdown {
 }
 .schedule__inner {
   width: 100%;
-    margin: -1vh auto;
-    padding: 80vh 0vw 0 0;
-      background: $schedule-background no-repeat 50% 0; }
+  margin: -1vh auto;
+  padding: 20vw 0vw 0 0;
+  background: $schedule-background no-repeat 50% 0; }
 .schedule__content {
-  max-width: 70%;
-  margin: 0vh 15vw 50px 15vw;
-  font-size: 1.5vw; }
+  max-width: 60vw;
+  margin: 0vh 20vw 50px 20vw;
+  font-size: 1.35vw; }
 .schedule__content:last-child {
   margin-bottom: 0; }
 .schedule__hall-titles {
@@ -279,14 +312,8 @@ ul#countdown {
   .schedule__hall-titles {
     margin-left: 100px;
     font-size: 3.5vw; } }
-.schedule__hall-title-a, .schedule__hall-title-b {
+.schedule__hall-title-a{
   width: 50%;
-  text-align: center;
-  display: inline-block; }
-  .schedule__hall-title-a--triple, .schedule__hall-title-b--triple {
-    width: 33%; }
-.schedule__hall-title-c {
-  width: 33%;
   text-align: center;
   display: inline-block; }
 .schedule__title {
@@ -318,13 +345,14 @@ ul#countdown {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+ }
 .schedule__info-time {
-  padding-left: 25px;
+  padding-left: 15px;
   color: #fff;
-  width: 205px;
-  height: 56px;
-  line-height: 56px;
+  width: 155px;
+  height: 3vw;
+  line-height: 3vw;
   background: url("../images/icons/connector-1.png") no-repeat 100% 50% #1DB3E6; }
 .schedule__info-time--hatching {
   background: url("../images/icons/connector-hatching.png") no-repeat 100% 50% #1DB3E6; }
@@ -334,17 +362,18 @@ ul#countdown {
     padding-left: 5px;
     font-size: 3.5vw; } }
 .schedule__info-text {
+  text-align: left;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  height: 56px;
-  line-height: 56px;
+  height: 3vw;
+  line-height: 3vw;
   color: #fff;
   background: #089DD1;
-  padding-left: 15px; 
+  padding-left: 14vw; 
   span.text{
-    padding-top: 10px;
+    /*padding-top: 10px;*/
   }
 }
 @media screen and (max-width: 720px) {
@@ -359,6 +388,7 @@ ul#countdown {
     text-overflow: ellipsis; } }
 .schedule__info-text--with-margin {
   margin-right: 13px; }
+
 /*.schedule__info-text-icon {
   display: inline-block;
   margin: -4px 10px 0 0;
@@ -394,7 +424,7 @@ ul#countdown {
 .schedule__report-time {
   padding-left: 25px;
   color: #000;
-  width: 185px;
+  width: 135px;
   height: 56px;
   line-height: 56px;
   background: url("../images/icons/connector-2.png") no-repeat 100% 50% #fff; }
@@ -404,7 +434,7 @@ ul#countdown {
     padding-left: 5px;
     font-size: 3.5vw; } }
 .schedule__report-hall-a, .schedule__report-hall-b {
-  padding: 25px;
+  padding: 0.5vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -428,11 +458,179 @@ ul#countdown {
 @media screen and (max-width: 720px) {
   .schedule__report-hall-a, .schedule__report-hall-b, .schedule__report-hall-c {
     font-size: 3.5vw; } }
-.schedule__report-hall-a {
-  margin-right: 13px; }
-.schedule__report-hall-c {
-  margin-left: 13px; }
 
+.tickets {
+    padding: 70px auto;
+}
+.tickets__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    /*zoom:1}*/}
+
+.tickets__list:before,.tickets__list:after {
+    content: "";
+    display: table
+}
+
+.tickets__list:after {
+    clear: both
+}
+
+.tickets__list-item {
+    float: left;
+    width: 22vw;
+    margin: 0 2vw;
+    border: 3px solid white;
+    border-right: 0 none;
+    border-left: 0 none;
+    background-color: transparent;
+    /*border-right: 1vw solid $schedule-background;}*/}
+
+.tickets__list-item:last-child {
+    border-right: 0 none
+}
+
+.tickets__box {
+    height: 20vw;
+    padding: 40px 30px;
+    a.buy{
+      color: white;
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, .5);
+      padding: 0.5vw 1vw;
+      font-size: 2vw;
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      overflow: hidden;
+      transition-duration: .5s;
+      transition-property: color,background-color, border;
+      cursor: not-allowed;
+      font-weight: bold;
+      min-width: 10vw;
+      width: 10vw;
+          border: 0.3vw solid rgba(255, 255, 255, .05);
+
+    }
+
+}
+
+.tickets__box-title {
+    margin-bottom: 40px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.tickets__box-price {
+    margin-bottom: 40px;
+    font-size: 4vw;
+    line-height: 1;
+    font-weight: 300;
+}
+
+.tickets__box-price sup {
+    margin-left: 8px;
+    top: -35px;
+    font-size: 1.5vw;
+    line-height: 1
+}
+
+.tickets__box-order {
+    display: block;
+    width: 100%
+}
+
+.invisible{
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.active{
+  background-color: rgba(255, 255, 255, .7);
+  color: #024761;
+  a.buy{
+    background-color: #024761;
+    border: 0.3vw solid #024761;
+    color: white;
+    cursor: pointer;
+  }
+  a.buy:hover{
+    -webkit-animation-name: hvr-back-pulse;
+    animation-name: hvr-back-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: rgba(255,255,255,.35);
+    color: #024761;
+    outline: 0;
+    text-decoration: none;
+    border: 0.3vw solid #024761;
+  }
+}
+/*.pricing{
+    color: white;
+
+}
+.pricing-item {
+    padding: 25px;
+    border: solid 3px #F2F2F2;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.pricing-item .plan-name {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.pricing-item .price {
+  font-size: 2vw;
+    font-weight: bold;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.pricing-item .plan-features {
+    opacity: 0.7;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.pricing-item .price .curr {
+    display: inline-block;
+}
+
+.plan-features>li {
+    text-align: left;
+    list-style-type: disc;
+    margin-left: 15px;
+}
+
+.pricing-item {
+    -moz-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+*/
 /*
 .stripe-holder{
   position: relative;
@@ -700,11 +898,11 @@ ul#countdown {
 .organizers-layout{
   margin-top: 10vh;
   height: auto;
-  min-height: 140vh;
+  min-height: 120vh;
 }
 @media screen and (max-width: 1400px) {
   .organizers-layout {
-    min-height: 70vw;
+    min-height: 50vw;
     max-height: 100vw;} }
 .organizer{
   margin: 5vw auto;
