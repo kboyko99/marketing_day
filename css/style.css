@@ -462,7 +462,7 @@ ul#countdown {
 
 .tickets__list {
   margin: 0;
-  padding: 0;
+  padding: 0 0 5vw 0;
   list-style: none;
   text-align: center;
   /*zoom:1}*/ }
@@ -488,7 +488,7 @@ ul#countdown {
   border-right: 0 none; }
 
 .tickets__box {
-  height: 20vw;
+  height: 10vw;
   padding: 40px 30px; }
   .tickets__box a.buy {
     color: white;
@@ -927,7 +927,7 @@ ul#countdown {
   position: relative;
   line-height: 25px;
   padding: 3vh 0vw;
-  width: 53%;
+  width: 7%;
   text-decoration: none;
   color: white;
   margin-left: 5px; }
@@ -944,7 +944,7 @@ ul#countdown {
   left: 0; }
 
 .social-icons.emails {
-  top: 22px;
+  top: 25px;
   width: 24px; }
 
 .social-icons.fb, .social-icons.instagram {
@@ -953,7 +953,7 @@ ul#countdown {
 .social-links {
   width: 35vw;
   font-size: 1.5vw;
-  margin-top: -40vh;
+  margin-top: -15vw;
   margin-left: 60vw; }
 
 .social-icons.vk {
@@ -982,7 +982,7 @@ footer {
   z-index: 9; }
 
 .footer__bottom-bg {
-  margin-top: -10vh;
+  margin-top: 0vh;
   height: 309px;
   width: 100%;
   background: url("../images/footer_bottom.png") no-repeat 50% 100%;
@@ -997,7 +997,7 @@ footer {
   top: 44vh; }
 
 .registration {
-  margin-top: -10vh;
+  margin-top: -5vw;
   width: 50vw;
   padding: 0 0 0 5vw; }
   .registration h1 {
