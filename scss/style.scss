@@ -3,9 +3,10 @@ $schedule-background: #09AEE6;
 $page-background: white;
 @font-face {
   font-family: 'MyCoco';
-  src:  local("Coco Gothic Regular-trial"),
-        url("../fonts/Coco Gothic Ultralight-trial.ttf");
+  src:  /*local("Coco Gothic Regular-trial"),*/
+        url("../fonts/9653.ttf");
 }
+
 @font-face {
   font-family: 'Numbers';
   src:  local("Circle Light"),

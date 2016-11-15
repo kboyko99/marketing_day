@@ -198,9 +198,9 @@
                 </div>
             </li>
             <li class="tickets__list-item">
-                <div class="tickets__box active" id="early">
-                    <div class="tickets__box-title">Квиток до
-                        <div class="color-blue number">5.12.16</div>
+                <div class="tickets__box" id="early">
+                    <div class="tickets__box-title">Рання пташка
+                        <div class="color-blue">до <span class="number">4</span> грудня</div>
                     </div>
                     <div class="tickets__box-price number">100<sup>UAH</sup></div>
 <!--                     <a href="/order" class="buy">Придбати</a> -->
@@ -208,8 +208,8 @@
             </li>
             <li class="tickets__list-item">
                 <div class="tickets__box" id="lazy">
-                    <div class="tickets__box-title">Квиток після
-                        <div class="color-blue number">5.12.16</div>
+                    <div class="tickets__box-title">Ледача пташка
+                        <div class="color-blue number">з <span class="number">5</span> грудня</div>
                     </div>
                     <div class="tickets__box-price number">130<sup>UAH</sup></div>
 <!--                     <a href="/order" class="buy">Придбати</a> -->
@@ -533,12 +533,6 @@ $(function() {
 function timeToLaunch(){
     // Get the current date
     var currentDate = new Date();
-
-    if(currentDate-lazyDate==0){
-        document.getElementById("early").className = "inactive";
-        document.getElementById("lazy").className = "active";
-    }
-
 
     // Find the difference between dates
     var diff = (currentDate - targetDate)/1000;
