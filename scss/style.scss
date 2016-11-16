@@ -1034,6 +1034,10 @@ footer {
   height: 309px;
   width: 100%;
   background: url("../images/footer_bottom.png") no-repeat 50% 100%; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
   z-index: 9;
 }
 
