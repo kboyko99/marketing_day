@@ -898,14 +898,9 @@ ul#countdown {
     display: table
 }
 .organizers-layout{
-  margin-top: 10vh;
-  height: auto;
-  min-height: 120vh;
+  z-index: 7;
 }
-@media screen and (max-width: 1900px) {
-  .organizers-layout {
-    min-height: 55vw;
-    max-height: 100vw;} }
+
 .organizer{
   margin: 5vw auto;
 
@@ -1033,7 +1028,7 @@ footer {
   width: 100%;
   margin-top: -1vh;
   background: url("../images/footer_top.png") no-repeat 50% 100%; 
-  z-index: 9;
+  z-index: 5;
 }.footer__bottom-bg {
   margin-top: 0vh;
   height: 309px;
