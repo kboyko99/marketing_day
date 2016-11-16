@@ -346,7 +346,8 @@ ul#countdown {
   background-size: contain; }
 
 .schedule__info-time--hatching {
-  background: url("../images/icons/connector-hatching.png") no-repeat 100% 50% #1DB3E6; }
+  background: url("../images/icons/connector-hatching.png") no-repeat 100% 50% #1DB3E6;
+  background-size: contain; }
 
 @media screen and (max-width: 720px) {
   .schedule__info-time {
@@ -372,7 +373,8 @@ ul#countdown {
     font-size: 3.5vw; } }
 
 .schedule__info-text--hatching {
-  background: url("../images/icons/hatching.png") repeat -1px 0 #089DD1; }
+  background: url("../images/icons/hatching.png") repeat -1px 0 #089DD1;
+  background-size: contain; }
 
 @media screen and (max-width: 720px) {
   .schedule__info-text--hatching {
@@ -423,7 +425,8 @@ ul#countdown {
   width: 135px;
   height: 56px;
   line-height: 56px;
-  background: url("../images/icons/connector-2.png") no-repeat 100% 50% #fff; }
+  background: url("../images/icons/connector-2.png") no-repeat 100% 50% #fff;
+  background-size: contain; }
 
 @media screen and (max-width: 720px) {
   .schedule__report-time {
