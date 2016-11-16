@@ -355,7 +355,8 @@ ul#countdown {
   width: 155px;
   height: 3vw;
   line-height: 3vw;
-  background: url("../images/icons/connector-1.png") no-repeat 100% 50% #1DB3E6; }
+  background: url("../images/icons/connector-1.png") no-repeat 100% 50% #1DB3E6;
+  background-size: contain; }
 .schedule__info-time--hatching {
   background: url("../images/icons/connector-hatching.png") no-repeat 100% 50% #1DB3E6; }
 @media screen and (max-width: 720px) {
