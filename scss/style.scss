@@ -209,7 +209,7 @@ header{
     font-size: inherit;
     float: right;
     padding: 0;
-    margin: 1.5vw 7.5vw 0 0;
+    margin: 1.1vw 7.5vw 0 0;
     border-width: 5px;
     min-width: 15vw;
     width: 15vw;
@@ -325,6 +325,7 @@ ul#countdown {
   color: #fff;
   font-family: 'MyCoco';
   font-weight: 600;
+  padding-left: 10.5vw;
   margin-bottom: 40px; }
 @media screen and (max-width: 720px) {
   .schedule__title {
@@ -363,7 +364,7 @@ ul#countdown {
     padding-left: 5px;
     font-size: 3.5vw; } }
 .schedule__info-text {
-  text-align: left;
+  text-align: center;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -372,7 +373,6 @@ ul#countdown {
   line-height: 3vw;
   color: #fff;
   background: #089DD1;
-  padding-left: 14vw; 
   span.text{
     /*padding-top: 10px;*/
   }
@@ -902,9 +902,9 @@ ul#countdown {
   height: auto;
   min-height: 120vh;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1900px) {
   .organizers-layout {
-    min-height: 50vw;
+    min-height: 55vw;
     max-height: 100vw;} }
 .organizer{
   margin: 5vw auto;
@@ -1052,7 +1052,7 @@ footer {
 }
 
 .registration{
-  h1{
+  h2{
         font-size: 4.25vw;
 
   }
