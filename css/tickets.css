@@ -1,12 +1,44 @@
+@font-face {
+  font-family: 'MyCoco';
+  src:  /*local("Coco Gothic Regular-trial"),*/
+        url("../fonts/9653.ttf");
+}
+
 html { 
   background: url("../images/background.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+font-family: 'MyCoco';
+
 }
-.form{
-	width: 40vw;
-	margin: 30vh auto;
+body{
+	margin: 0;
 }
-.form {     min-width: 333px;     width: 40%;     margin: 30vh auto; }
+.form {     min-width: 333px;     width: 40%;     margin: 0vh auto; }
+.head__title {
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+    z-index: 3;
+    width: 100%;
+    margin-top: 5vw;
+    height: 15vw;
+    display: inline-block;
+}
+.logo {
+    width: 25vw;
+    height: auto;
+    padding: 5vh 0 15vh 25vw;
+    margin: 0;
+    background: none;
+}
+h1 {
+	position: absolute;
+	margin-top: 5vw;
+	margin-left: -7vw;
+	color: #024761;
+	display: inline;
+	text-align: left;
+	font-size: 5vw;
+	font-weight: bold;
+}
