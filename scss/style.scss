@@ -38,6 +38,8 @@ header{
   width: 100%;
   max-height: 98vw;
   height: 200vh;
+  padding-bottom: 20vw;
+  background: $schedule-background;
 }
 .head-layout {
   position: absolute;
@@ -47,8 +49,7 @@ header{
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  max-height: 98vw;
-  height: 200vh;
+  padding-bottom: 9vw;
   font-family: 'MyCoco';
   color: white; }
 @media screen and (max-width: 800px) {
@@ -184,8 +185,8 @@ header{
   z-index: 999;
   min-width: 10vw;
   width: 25vw;
-/*  margin-top: 6vh; 
-*/  color: white;
+/*  margin-top: 6vh; */
+  color: white;
   background-color: transparent;
   padding: 1vw 2.5vw;
   font-size: 2vw;
@@ -205,6 +206,7 @@ header{
   border: 0.5vw solid rgba(255, 255, 255, 0.5);
   min-width: 20vw;
   width: 20vw;
+  z-index: 99;
   &.nav{
     font-size: inherit;
     float: right;
@@ -219,14 +221,12 @@ header{
 @media screen and (max-width: 800px) {
   .info{
     margin: 0 auto;
-    padding: 0;
-}
-.register__button{
-      margin-top: 15%;
-      &.down{
-        padding: 2vh 10vw;
-        margin-top: 0;
-      }
+    padding: 0;}
+  .register__button{
+    margin-top: 15%;
+    &.down{
+      padding: 2vh 10vw;
+      margin-top: 0;}
   }
 }
 .register__button:focus,.register__button:hover{
@@ -251,8 +251,8 @@ header{
     }
 }
 .description-layout{
-/*  background-color: $schedule-background;
-*/  margin: 25vh 0;
+/*  background-color: $schedule-background;*/
+  margin: 25vh 0;
 }
 @media screen and (max-width: 800px ){
 .description-layout{
@@ -260,8 +260,8 @@ header{
 }
 }
 .description__content{
-/*  background-color: $schedule-background;
-*/  color: white;
+/*  background-color: $schedule-background;*/
+  color: white;
   width: 70%;
   margin: 0vh auto;
   font-size: 2.25vw;
@@ -283,7 +283,6 @@ ul#countdown {
     width: 10vw;
     font-size: 4vw;
     text-align: center;
-    
     .label {
       color: $page-background;
       font-size: 18px;
@@ -292,10 +291,61 @@ ul#countdown {
     }
   }
 }
+.speakers-layout{
+  background-color: $schedule-background;
+  position: relative;
+  margin-top: -1vh;
+  z-index:99;
+  display: inline-block;
+}
+.wrap{
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  width: 70%;
+}
+.wrap:hover .speaker_photo:not(:hover) {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+        opacity: .75;
+}
+
+.speaker{
+  float: left;
+  width: 20%;
+  margin: 0 6%;
+  padding-top: 5%;
+/*  margin: 5vh 5vw;*/
+  color: white;
+  min-height: 17vw;
+  font-size: 1.5vw;
+}
+.speaker_photo {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  -webkit-transition: .25s ease-in;
+            transition: .25s ease-in;
+}
+
+
+.speaker_photo {
+  border-radius: 100%;
+  width: 75%;
+  overflow: hidden;
+  height: auto;
+  float: none;
+  border:10px solid transparent;
+  z-index: 999;
+}
+
 .schedule__inner {
   width: 100%;
-  margin: -1vh auto;
-  padding: 20vw 0vw 0 0;
+  margin: -1.5vh auto;
+  padding: 5vw 0vw 0 0;
   background: $schedule-background no-repeat 50% 0; }
 .schedule__content {
   max-width: 60vw;
@@ -317,16 +367,21 @@ ul#countdown {
   width: 50%;
   text-align: center;
   display: inline-block; }
-.schedule__title {
-  letter-spacing: -3px;
+.title {
+  width: 45vw;
   text-transform: uppercase;
   font-size: 5vw;
   text-align: center;
   color: #fff;
   font-family: 'MyCoco';
   font-weight: 600;
-  padding-left: 10.5vw;
-  margin-bottom: 40px; }
+  border: 1px solid white;
+  border-left: none;
+  border-right: none;
+  margin: 2vw auto;
+  &.schedule__title{
+      margin-left: 33vw;}
+}
 @media screen and (max-width: 720px) {
   .schedule__title {
     font-size: 4vw;

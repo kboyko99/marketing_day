@@ -30,7 +30,9 @@ header {
   position: relative;
   width: 100%;
   max-height: 98vw;
-  height: 200vh; }
+  height: 200vh;
+  padding-bottom: 20vw;
+  background: #09AEE6; }
 
 .head-layout {
   position: absolute;
@@ -40,8 +42,7 @@ header {
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  max-height: 98vw;
-  height: 200vh;
+  padding-bottom: 9vw;
   font-family: 'MyCoco';
   color: white; }
 
@@ -169,8 +170,7 @@ header {
   z-index: 999;
   min-width: 10vw;
   width: 25vw;
-  /*  margin-top: 6vh; 
-*/
+  /*  margin-top: 6vh; */
   color: white;
   background-color: transparent;
   padding: 1vw 2.5vw;
@@ -190,7 +190,8 @@ header {
   font-weight: bold;
   border: 0.5vw solid rgba(255, 255, 255, 0.5);
   min-width: 20vw;
-  width: 20vw; }
+  width: 20vw;
+  z-index: 99; }
   .register__button.nav {
     font-size: inherit;
     float: right;
@@ -231,8 +232,7 @@ header {
     border-width: 5px; }
 
 .description-layout {
-  /*  background-color: $schedule-background;
-*/
+  /*  background-color: $schedule-background;*/
   margin: 25vh 0; }
 
 @media screen and (max-width: 800px) {
@@ -240,8 +240,7 @@ header {
     margin: 25vw 0; } }
 
 .description__content {
-  /*  background-color: $schedule-background;
-*/
+  /*  background-color: $schedule-background;*/
   color: white;
   width: 70%;
   margin: 0vh auto;
@@ -270,10 +269,57 @@ ul#countdown {
       font-size: 1.5vw;
       text-transform: uppercase; }
 
+.speakers-layout {
+  background-color: #09AEE6;
+  position: relative;
+  margin-top: -1vh;
+  z-index: 99;
+  display: inline-block; }
+
+.wrap {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  width: 70%; }
+
+.wrap:hover .speaker_photo:not(:hover) {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: .75; }
+
+.speaker {
+  float: left;
+  width: 20%;
+  margin: 0 6%;
+  padding-top: 5%;
+  /*  margin: 5vh 5vw;*/
+  color: white;
+  min-height: 17vw;
+  font-size: 1.5vw; }
+
+.speaker_photo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: .25s ease-in;
+  transition: .25s ease-in; }
+
+.speaker_photo {
+  border-radius: 100%;
+  width: 75%;
+  overflow: hidden;
+  height: auto;
+  float: none;
+  border: 10px solid transparent;
+  z-index: 999; }
+
 .schedule__inner {
   width: 100%;
-  margin: -1vh auto;
-  padding: 20vw 0vw 0 0;
+  margin: -1.5vh auto;
+  padding: 5vw 0vw 0 0;
   background: #09AEE6 no-repeat 50% 0; }
 
 .schedule__content {
@@ -301,16 +347,20 @@ ul#countdown {
   text-align: center;
   display: inline-block; }
 
-.schedule__title {
-  letter-spacing: -3px;
+.title {
+  width: 45vw;
   text-transform: uppercase;
   font-size: 5vw;
   text-align: center;
   color: #fff;
   font-family: 'MyCoco';
   font-weight: 600;
-  padding-left: 10.5vw;
-  margin-bottom: 40px; }
+  border: 1px solid white;
+  border-left: none;
+  border-right: none;
+  margin: 2vw auto; }
+  .title.schedule__title {
+    margin-left: 33vw; }
 
 @media screen and (max-width: 720px) {
   .schedule__title {

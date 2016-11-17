@@ -25,8 +25,10 @@
 
     <div class="navigation">
         <a class="nav__links" href="#main">Головна</a>
+        <a data-scroll="" class="nav__links" href="#speakers">Спікери</a>
         <a data-scroll="" class="nav__links" href="#schedule">Розклад</a>
         <a data-scroll="" class="nav__links place" href="#place">Місце</a>
+
         <!-- <a data-scroll="" class="nav__links partners" href="#partners">Партнери</a> -->
         <a data-scroll="" class="nav__links organizers" href="#organizers">Організатори</a>
         <a data-scroll="" class="nav__links contacts" href="#contacts">Контакти</a>
@@ -47,12 +49,12 @@
 
     <div class="description-layout">
         <div class="description__content">
-            <p>
-                Перша Digital marketing конференція у нашому місті.
-                Можливість познайомити та об’єднати всіх, хто працює, цікавиться і планує зайнятися інтернет-маркетингом.
-            </p>
+            <p>Digital marketing конференція у Кропивницькому</p>
+            <p>Можливість познайомити та об’єднати всіх, хто працює, цікавиться і планує зайнятися інтернет-маркетингом</p>
             <br>
-                <span class="number">9</span><span> спікерів,</span><span class="number"> 6</span><span> годин корисної інформації.</span>
+                <span class="number">9</span><span> спікерів,</span><br>
+                <span class="number">6</span><span> годин корисної інформації.</span><br>
+                <span class="number">3</span><span> напрямки</span>
         </div>
     </div>
     <ul id="countdown">
@@ -80,9 +82,50 @@
 
 </div>
 </header>
+<div class="speakers-layout" id="speakers">
+    <div class="title">Спікери</div>
 
-<div class="schedule__inner" >
-    <div class="schedule__title" id="schedule">Розклад</div>
+    <div class="wrap">
+        <div class="speaker"><img src="images/speaker.png" class="speaker_photo"  alt="">
+            <div class="name">Олександр Алєксандров</div>
+            <div class="position">Cool guy</div>
+        </div>
+        <div class="speaker"><img src="images/speaker.png" class="speaker_photo"  alt="">
+            <div class="name">Олександр Ланкміллер</div>
+            <div class="position">Cool guy</div>
+        </div>
+        <div class="speaker"><img src="images/speaker.png" class="speaker_photo"  alt="">
+            <div class="name">Вікторія Топало</div>
+            <div class="position">Cool guy</div>
+        </div>
+        <div class="speaker"><img src="images/speaker.png" class="speaker_photo"  alt="">
+            <div class="name">Андрій Ткаченко</div>
+            <div class="position">Cool guy</div>
+        </div>
+        <div class="speaker"><img src="images/speaker.png" class="speaker_photo"  alt="">
+            <div class="name">Ольга Луценко</div>
+            <div class="position">Cool guy</div>
+        </div>
+        <div class="speaker"><img src="images/speaker.png" class="speaker_photo"  alt="">
+            <div class="name">Максим Аненко</div>
+            <div class="position">Cool guy</div>
+        </div>
+        <div class="speaker"><img src="images/speaker.png" class="speaker_photo"  alt="">
+            <div class="name">Антон Черевашко</div>
+            <div class="position">Cool guy</div>
+        </div>
+        <div class="speaker"><img src="images/speaker.png" class="speaker_photo"  alt="">
+            <div class="name">Гордієнко Іван</div>
+            <div class="position">Cool guy</div>
+        </div>
+        <div class="speaker"><img src="images/speaker.png" class="speaker_photo"  alt="">
+            <div class="name">Олексій Лябіхов</div>
+            <div class="position">Cool guy</div>
+        </div>
+    </div>
+</div>
+<div class="schedule__inner" id="schedule">
+    <div class="schedule__title title" >Розклад</div>
     <div class="schedule__content">
 <!--         <div class="schedule__hall-titles">
             <div class="schedule__hall-title-a">Зала A</div>
@@ -105,8 +148,9 @@
         </div>
         <div class="schedule__report">
             <div class="schedule__report-time number">10:10</div>
-            <div class="schedule__report-hall-a">DigitalWill Контекстная реклама: как все устроено
-                <div class="schedule__reporter">Алєксандров Олександр</div>
+            <div class="schedule__report-hall-a">
+                SMM-солянка: инструменты, кейсы, истории успеха
+                <div class="schedule__reporter">Вікторія Топало</div>
             </div>
         </div>
         <div class="schedule__report">
@@ -116,6 +160,13 @@
                 <div class="schedule__reporter">Олександр Ланкміллер</div>
             </div>
         </div>
+        <div class="schedule__report">
+            <div class="schedule__report-time number">11:45</div>
+            <div class="schedule__report-hall-a">...уточняется...
+                <div class="schedule__reporter">Алєксандров Олександр</div>
+            </div>
+        </div>
+
 <!--         <div class="schedule__info">
             <div class="schedule__info-time number">11:45</div>
             <div class="schedule__info-text">
@@ -124,19 +175,13 @@
             </div>
         </div> -->
         <div class="schedule__report">
-            <div class="schedule__report-time number">11:45</div>
-            <div class="schedule__report-hall-a">
-                SMM-солянка: инструменты, кейсы, истории успеха
-                <div class="schedule__reporter">Вікторія Топало</div>
-            </div>
-        </div>
-        <div class="schedule__report">
             <div class="schedule__report-time number">12:30</div>
             <div class="schedule__report-hall-a">
-                 Основные ошибки в контекстной рекламе
-                <div class="schedule__reporter">Андрій Ткаченко</div>
+                Как продавать в соц.сетях или возможности для бизнеса
+                <div class="schedule__reporter">Гордієнко Іван</div>
             </div>
         </div>
+
         <div class="schedule__info">
             <div class="schedule__info-time number">13:00</div>
             <div class="schedule__info-text">
@@ -144,16 +189,22 @@
                 Обід
             </div>
         </div>
-
         <div class="schedule__report">
             <div class="schedule__report-time number">14:00</div>
+            <div class="schedule__report-hall-a">
+                 Основные ошибки в контекстной рекламе
+                <div class="schedule__reporter">Андрій Ткаченко</div>
+            </div>
+        </div>
+        <div class="schedule__report">
+            <div class="schedule__report-time number">14:45</div>
             <div class="schedule__report-hall-a">
                 Как удвоить  ROI от SMM: основы воронки продаж
                 <div class="schedule__reporter">Ольга Луценко</div>
             </div>
         </div>
         <div class="schedule__report">
-            <div class="schedule__report-time number">14:45</div>
+            <div class="schedule__report-time number">15:30</div>
             <div class="schedule__report-hall-a">
                  Как настроить таргетированную рекламу в FB с ROI<span class="number"> 120%</span>
                 <div class="schedule__reporter">Максим Аненко</div>
@@ -161,20 +212,14 @@
         </div>
 
         <div class="schedule__report">
-            <div class="schedule__report-time number">15:30</div>
+            <div class="schedule__report-time number">16:15</div>
             <div class="schedule__report-hall-a">
-                ...............
+                Поведенческие факторы и их роль в продвижении Вашего сайта
                 <div class="schedule__reporter">Антон Черевашко </div>
             </div>
         </div>
 
-        <div class="schedule__report">
-            <div class="schedule__report-time number">16:15</div>
-            <div class="schedule__report-hall-a">
-                Как продавать в соц.сетях или возможности для бизнеса
-                <div class="schedule__reporter">Гордієнко Іван</div>
-            </div>
-        </div>
+        
         <div class="schedule__report">
             <div class="schedule__report-time number">17:00</div>
             <div class="schedule__report-hall-a">
@@ -604,6 +649,6 @@ ga('create', 'UA-80154183-2', 'auto');
 ga('send', 'pageview');
 
 </script>
-<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40946754 = new Ya.Metrika({ id:40946754, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40946754" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40946754 = new Ya.Metrika({ id:40946754, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40946754" style="position:absolute; left:-9999px;" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </body>
 </html>
