@@ -16,29 +16,42 @@ font-family: 'MyCoco';
 body{
 	margin: 0;
 }
-.form {     min-width: 333px;     width: 40%;     margin: 0vh auto; }
+.form {     min-width: 333px;     width: 40%;     margin: -10vh auto 0; }
 .head__title {
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
     z-index: 3;
     width: 100%;
-    margin-top: 5vw;
-    height: 15vw;
+    margin-top: 1vh;
+    height: 12vw;
     display: inline-block;
 }
 .logo {
     width: 25vw;
     height: auto;
-    padding: 5vh 0 15vh 25vw;
+    padding: 1.5vh 0 15vh 25vw;
     margin: 0;
     background: none;
 }
 h1 {
 	position: absolute;
-	margin-top: 5vw;
+	margin-top: 2.5vw;
 	margin-left: -7vw;
 	color: #024761;
 	display: inline;
 	text-align: left;
 	font-size: 5vw;
-	font-weight: bold;
+}
+.details{
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+  width: 100%;
+  margin-top: 2vh;
+  color: #024761;
+  line-height: 1;
+  font-size: 2.2vw;
+}
+ul{
+  margin: 0vh auto;
+  padding: 2vh 0;
+  width: 30%;
+
 }
