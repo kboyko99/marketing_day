@@ -26,18 +26,18 @@ html {
 .head-registration, .head__title, .place-address, .rwd-table tr td, .speaker, .speaker_photo, .speakers {
   text-align: center; }
 
-header {
+.head-layout {
   position: relative;
   width: 100%;
   max-height: 98vw;
   height: 200vh;
   padding-bottom: 20vw;
-  background: #09AEE6; }
+  /*background: $schedule-background;*/ }
 
-.head-layout {
+header {
   position: absolute;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/background.png") no-repeat center center;
-  background-color: #09AEE6;
+  /*background-color: #09AEE6;*/
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -47,7 +47,7 @@ header {
   color: white; }
 
 @media screen and (max-width: 800px) {
-  header {
+  head-layout {
     max-height: 230vw;
     height: 230vw; } }
 

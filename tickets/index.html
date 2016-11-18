@@ -22,6 +22,15 @@ script.async = true;
 script.src = "https://2event.com/js/widget-tickets.js";
 document.getElementsByTagName('head')[0].appendChild(script);
 })();
+window.onload = function(){
+	setTimeout(
+	document.getElementsByTagName("button")[0].onclick = function(){
+		yaCounter40946754.reachGoal('ticket');
+		ga('send', 'event', 'knopka', 'ticket');
+		alert("ok");
+	}, 1000);
+}
+
 </script>
 <div id="2event_tickets_widget" class="form"></div>
 <script>
@@ -34,6 +43,23 @@ ga('create', 'UA-80154183-2', 'auto');
 ga('send', 'pageview');
 
 </script>
+<script type="text/javascript">
+</script>
 <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40946754 = new Ya.Metrika({ id:40946754, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40946754" style="position:absolute; left:-9999px;" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1172947792784117');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1172947792784117&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
 </body>
 </html>
