@@ -1,57 +1,100 @@
 @font-face {
-  font-family: 'MyCoco';
-  src:  /*local("Coco Gothic Regular-trial"),*/
-        url("../fonts/9653.ttf");
+    font-family: 'MyCoco';
+    src: url("../fonts/9653.ttf");
 }
 
-html { 
-  background: url("../images/background.png") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-font-family: 'MyCoco';
+html {
+    background: url("../images/background.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'MyCoco', sans-serif;
+}
 
+body, html {
+    width: 100%;
+    margin: 0;
 }
-body{
-	margin: 0;
+
+.form {
+    width: 460px;
+    margin: 0 auto;
 }
-.form {     min-width: 333px;     width: 40%;     margin: -10vh auto 0; }
+
+@media all and (max-width: 470px) {
+    .form {
+        width: 95%;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .form {
+        width: 320px;
+    }
+}
+
 .head__title {
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
-    z-index: 3;
     width: 100%;
     margin-top: 1vh;
-    height: 12vw;
-    display: inline-block;
+    text-align: center;
 }
-.logo {
-    width: 25vw;
-    height: auto;
-    padding: 1.5vh 0 15vh 25vw;
-    margin: 0;
-    background: none;
-}
-h1 {
-	position: absolute;
-	margin-top: 2.5vw;
-	margin-left: -7vw;
-	color: #024761;
-	display: inline;
-	text-align: left;
-	font-size: 5vw;
-}
-.details{
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  width: 100%;
-  margin-top: 2vh;
-  color: white;
-  line-height: 1;
-  font-size: 2.2vw;
-}
-ul{
-  margin: 0vh auto;
-  padding: 2vh 0;
-  width: 30%;
 
+.tlog-holder {
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.head-holder {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ticket-holder {
+    margin-top: 1vh;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    margin: 0;
+}
+
+h1 {
+    color: #024761;
+    display: inline-block;
+    font-size: 200%;
+}
+@media all and (max-width: 430px){
+    .tlog-holder {
+        margin-top:20px;
+    }
+
+}
+.details {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    width: 100%;
+    margin-top: 2vh;
+    color: white;
+    line-height: 1;
+    font-size: 140%;
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+ul {
+    margin: 0 auto;
+    padding: 2vh 0;
+    width: 30%;
+}
+
+@media (max-width: 600px) {
+    ul {
+        width: 80%;
+    }
 }
