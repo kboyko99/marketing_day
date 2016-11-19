@@ -17,9 +17,6 @@ html {
   font-weight: bold;
   font-family: 'MyCoco'; }
 
-@media (max-width: 510px) {
-  font-size: 3.5vw; }
-
 .contact-info a, .nav__links, .register__button, .speaker__link {
   text-decoration: none; }
 
@@ -48,11 +45,10 @@ header {
   width: 100%;
   top: 0;
   padding: 0 0;
-  font-size: 100%;
+  font-size: 85%;
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
   float: none;
-  text-align: center;
-  /*padding-top: 2.5vh;*/ }
+  text-align: center; }
 
 .nav__links {
   position: relative;
@@ -85,9 +81,7 @@ header {
   animation-iteration-count: infinite;
   background-color: rgba(255, 255, 255, 0.35);
   color: #ECF0F1;
-  /*outline: 0;*/
   text-decoration: none;
-  /*border: 0.5vw solid rgba(255, 255, 255, 0.8);*/
   color: white; }
 
 .head__title {
@@ -95,16 +89,21 @@ header {
   z-index: 3;
   font-size: 250%;
   width: 100%;
+  position: relative;
+  top: 27vh;
   padding: 5vh 0;
   max-height: 18vw; }
 
 @media screen and (max-width: 800px) {
+  .navigation {
+    position: absolute; }
   .head__title {
     padding-bottom: 45vh; } }
 
 .logo {
   width: 35vw;
   height: auto;
+  top: 0;
   padding: 5vh 5vw 5vh 5vw;
   margin: 0vh 0vw 0vh -45vw;
   background: none; }
@@ -115,24 +114,24 @@ header {
     margin: 0 auto; } }
 
 .info {
+  top: 0;
   margin-left: 40vw;
-  padding-top: 91px;
+  padding: 50px 0;
   color: #024761;
-  line-height: 3vw;
   margin-top: -25vw; }
   .info .geostasis {
     margin: 0 auto;
     padding: 0;
-    width: 37vw;
+    width: 37%;
     line-height: 0.4; }
   .info h1 {
-    font-size: 135%;
+    font-size: 175%;
     margin-top: 2vw;
-    line-height: 8vw;
     margin-bottom: 0; }
   .info h2 {
-    margin: 22px 0 0;
-    font-size: 80%; }
+    margin: 0 0;
+    font-size: 80%;
+    line-height: 0.8; }
   .info span {
     margin: -2vw 0 0;
     font-size: 24px; }
@@ -156,14 +155,12 @@ header {
   font-size: 3vw; }
 
 .register__button {
-  z-index: 999;
   min-width: 10vw;
   width: 25vw;
-  /*  margin-top: 6vh; */
   color: white;
   background-color: transparent;
   padding: 1vw 24px;
-  font-size: 2vw;
+  font-size: 115%;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -185,7 +182,7 @@ header {
     font-size: inherit;
     float: right;
     padding: 0;
-    margin: 1.1vw 7.5vw 0 0;
+    margin: 1.5% 7.5vw 0 0;
     border-width: 5px;
     min-width: 15vw;
     width: 15vw; }
@@ -195,7 +192,8 @@ header {
     margin: 0 auto;
     padding: 0; }
   .register__button {
-    margin-top: 15%; }
+    min-width: 35vw;
+    font-size: 85%; }
     .register__button.down {
       padding: 2vh 10vw;
       margin-top: 0; } }
@@ -222,7 +220,7 @@ header {
 
 .description-layout {
   /*  background-color: $schedule-background;*/
-  margin: 25vh 0; }
+  margin: 30% 0 0; }
 
 @media screen and (max-width: 800px) {
   .description-layout {
@@ -233,7 +231,7 @@ header {
   color: white;
   width: 70%;
   margin: 0vh auto;
-  font-size: 2.25vw; }
+  font-size: 120%; }
 
 ul#countdown {
   position: relative;
@@ -250,13 +248,17 @@ ul#countdown {
     padding: 0;
     display: inline-block;
     width: 10vw;
-    font-size: 4vw;
+    font-size: 200%;
     text-align: center; }
     ul#countdown li .label {
       color: white;
       font-size: 18px;
-      font-size: 1.5vw;
+      font-size: 40%;
       text-transform: uppercase; }
+
+@media all and (max-width: 510px) {
+  ul#countdown {
+    display: none; } }
 
 .speakers-layout {
   background-color: #09AEE6;
@@ -281,10 +283,9 @@ ul#countdown {
   width: 20%;
   margin: 0 6%;
   padding-top: 5%;
-  /*  margin: 5vh 5vw;*/
   color: white;
   min-height: 17vw;
-  font-size: 1.5vw; }
+  font-size: 90%; }
 
 .speaker_photo {
   list-style: none;
@@ -308,13 +309,13 @@ ul#countdown {
 .schedule__inner {
   position: relative;
   width: 100%;
-  margin: 0 auto;
+  margin: -1vh auto;
   padding: 10vw 0vw 0 0;
   background: #09AEE6 no-repeat 50% 0; }
 
 .schedule__content {
   margin: 0vh 20vw 50px 20vw;
-  font-size: 1.35vw; }
+  font-size: 80%; }
 
 .schedule__content:last-child {
   margin-bottom: 0; }
@@ -331,11 +332,6 @@ ul#countdown {
   font-size: 24px;
   color: #fff; }
 
-@media screen and (max-width: 720px) {
-  .schedule__hall-titles {
-    margin-left: 100px;
-    font-size: 3.5vw; } }
-
 .schedule__hall-title-a {
   width: 50%;
   text-align: center;
@@ -344,7 +340,7 @@ ul#countdown {
 .title {
   width: 48vw;
   text-transform: uppercase;
-  font-size: 5vw;
+  font-size: 250%;
   text-align: center;
   color: #fff;
   font-family: 'MyCoco';
@@ -357,13 +353,9 @@ ul#countdown {
     margin-left: 31vw; }
 
 @media screen and (max-width: 720px) {
-  .schedule__title {
-    font-size: 4vw;
-    letter-spacing: -1px; } }
-
-@media screen and (max-width: 720px) {
-  .schedule__second-title {
-    font-size: 30px;
+  .schedule__title, .title {
+    font-size: 200%;
+    width: 70%;
     letter-spacing: -1px; } }
 
 .schedule__bottom-bg {
@@ -395,9 +387,12 @@ ul#countdown {
 
 @media screen and (max-width: 720px) {
   .schedule__info-time {
-    width: 100px;
-    padding-left: 5px;
-    font-size: 3.5vw; } }
+    width: 25%;
+    height: auto;
+    line-height: 1;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 110%; } }
 
 .schedule__info-text {
   text-align: center;
@@ -409,22 +404,12 @@ ul#countdown {
   line-height: 3vw;
   color: #fff;
   background: #089DD1; }
-  .schedule__info-text span.text {
-    /*padding-top: 10px;*/ }
 
 @media screen and (max-width: 720px) {
   .schedule__info-text {
-    font-size: 3.5vw; } }
-
-.schedule__info-text--hatching {
-  background: url("../images/icons/hatching.png") repeat -1px 0 #089DD1;
-  background-size: contain; }
-
-@media screen and (max-width: 720px) {
-  .schedule__info-text--hatching {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; } }
+    font-size: 110%;
+    height: auto;
+    line-height: 1; } }
 
 .schedule__info-text--with-margin {
   margin-right: 13px; }
@@ -451,8 +436,9 @@ ul#countdown {
 @media screen and (max-width: 720px) {
   .schedule__report-time {
     width: 80px;
-    padding-left: 5px;
-    font-size: 190%; } }
+    padding-left: 15px;
+    text-align: left;
+    font-size: 110%; } }
 
 .schedule__report-hall-a, .schedule__report-hall-b {
   padding: 0.5vw;
@@ -479,63 +465,29 @@ ul#countdown {
 
 @media screen and (max-width: 720px) {
   .schedule__report-hall-a, .schedule__report-hall-b, .schedule__report-hall-c {
-    font-size: 3.5vw; } }
+    font-size: 110%; } }
 
 .tickets {
   padding: 5vw 0 0; }
 
 .tickets__list {
-  margin: 0;
+  width: 50%;
+  margin: 0 auto;
   padding: 0 0 5vw 0;
   list-style: none;
-  text-align: center;
-  /*zoom:1}*/ }
-
-.tickets__list:before, .tickets__list:after {
-  content: "";
-  display: table; }
-
-.tickets__list:after {
-  clear: both; }
+  text-align: center; }
 
 .tickets__list-item {
-  float: left;
-  width: 22vw;
-  margin: 0 2vw;
+  width: 49%;
+  display: inline-block;
   border: 3px solid white;
   border-right: 0 none;
   border-left: 0 none;
-  background-color: transparent;
-  /*border-right: 1vw solid $schedule-background;}*/ }
-
-.tickets__list-item:last-child {
-  border-right: 0 none; }
+  background-color: transparent; }
 
 .tickets__box {
   height: 140px;
   padding: 40px 30px; }
-  .tickets__box a.buy {
-    color: white;
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 0.5vw 1vw;
-    font-size: 2vw;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px transparent;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    overflow: hidden;
-    transition-duration: .5s;
-    transition-property: color, background-color, border;
-    cursor: not-allowed;
-    font-weight: bold;
-    min-width: 10vw;
-    width: 10vw;
-    border: 0.3vw solid rgba(255, 255, 255, 0.05); }
 
 .tickets__box-title {
   margin-bottom: 40px;
@@ -544,50 +496,18 @@ ul#countdown {
 
 .tickets__box-price {
   margin-bottom: 40px;
-  font-size: 4vw;
   line-height: 1;
   font-weight: 300; }
 
 .tickets__box-price sup {
   margin-left: 8px;
   top: -35px;
-  font-size: 1.5vw;
+  font-size: 50%;
   line-height: 1; }
 
-.tickets__box-order {
-  display: block;
-  width: 100%; }
-
-.invisible {
-  border: none;
-  margin: 0;
-  padding: 0;
-  background-color: transparent; }
-
-.active {
-  background-color: rgba(255, 255, 255, 0.7);
-  color: #024761; }
-  .active a.buy {
-    background-color: #024761;
-    border: 0.3vw solid #024761;
-    color: white;
-    cursor: pointer; }
-  .active a.buy:hover {
-    -webkit-animation-name: hvr-back-pulse;
-    animation-name: hvr-back-pulse;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-delay: .5s;
-    animation-delay: .5s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    background-color: rgba(255, 255, 255, 0.35);
-    color: #024761;
-    outline: 0;
-    text-decoration: none;
-    border: 0.3vw solid #024761; }
+@media all and (max-width: 510px) {
+  .tickets__list-item {
+    width: 95%; } }
 
 .fullwidth_header, .head-moto {
   color: #09AEE6; }
@@ -601,7 +521,7 @@ ul#countdown {
     width: 95%; } }
 
 .fullwidth_header {
-  font-size: 160%;
+  font-size: 150%;
   padding: 2%;
   margin: 0;
   letter-spacing: 3px;
@@ -636,8 +556,7 @@ ul#countdown {
 .partner-img {
   margin: 0 auto;
   padding: 0 11px 4px;
-  vertical-align: bottom;
-  /*height: 65px*/ }
+  vertical-align: bottom; }
   .partner-img img {
     width: 14vw; }
 
@@ -656,6 +575,14 @@ ul#countdown {
 .partners:after {
   display: table; }
 
+@media all and (max-width: 720px) {
+  .partner-block {
+    width: 48.7%; }
+  .partner-img img {
+    width: 100%; }
+  .partner-moto {
+    font-size: 65%; } }
+
 .organizers-layout {
   z-index: 7;
   padding-bottom: 2vw; }
@@ -663,22 +590,26 @@ ul#countdown {
 .organizer {
   margin: 5vw auto; }
   .organizer div.name {
-    margin-top: -13vw; }
+    margin-top: -12%; }
   .organizer.left {
     text-align: -webkit-left; }
+    .organizer.left img {
+      margin-left: 50%; }
     .organizer.left div.name {
       margin-left: 22vw; }
     .organizer.left div.contacts {
-      margin-left: 25vw; }
+      margin-left: 25%; }
   .organizer.right {
     text-align: -webkit-right; }
+    .organizer.right .photo {
+      margin-right: 5%; }
     .organizer.right div.name {
       margin-right: 22vw; }
     .organizer.right div.contacts {
-      margin-right: 25vw; }
+      margin-right: 25%; }
 
 .organizer .photo {
-  width: 15vw;
+  width: 140px;
   height: auto; }
   .organizer .photo img {
     width: 100%;
@@ -701,6 +632,11 @@ ul#countdown {
   display: none; }
 
 @media (max-width: 510px) {
+  .organizer .photo {
+    width: 35%;
+    height: auto; }
+  .organizer div.name {
+    margin-top: 0; }
   .copy {
     display: none; }
   .social-links {
@@ -737,7 +673,8 @@ ul#countdown {
   width: 35vw;
   font-size: 1.5vw;
   margin-top: -15vw;
-  margin-left: 60vw; }
+  margin-left: 60vw;
+  margin-bottom: 10%; }
 
 .social-icons.vk {
   height: 28px;
@@ -795,13 +732,13 @@ footer {
     width: 100%;
     margin-top: -25vh;
     padding: 0; }
-    .registration h1 {
-      font-size: 6.25vw; }
+    .registration h2 {
+      font-size: 160%; }
   .social-links {
     width: 100%;
     margin: 10vh 0 10vh 0; }
     .social-links h2 {
-      font-size: 4vw; }
+      font-size: 400%; }
   .social-icons {
     padding: 2vh 2vw; }
   .social-link {
