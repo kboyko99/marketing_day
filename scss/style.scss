@@ -118,10 +118,15 @@ header {
     position: absolute;
   }
   .head__title {
+    top: 30vh;
     padding-bottom: 45vh;
   }
 }
-
+@media all and(max-width: 510px){
+  .head__title{
+    padding-bottom: 55vh;
+  }
+}
 .logo {
   width: 35vw;
   height: auto;
@@ -255,12 +260,27 @@ header {
   margin: 30% 0 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 510px) {
+  .info{
+    h1{
+      font-size: 100%;
+    }
+    h2{
+      font-size: 75%;
+    }
+    .geostasis{
+      width: 50%;    }
+  }
   .description-layout {
-    margin: 25vw 0;
+    margin: 70% 0 10%;
   }
 }
 
+@media all and(max-width: 1024px){
+  .info{
+    padding: 0px 0;
+  }
+}
 .description__content {
   /*  background-color: $schedule-background;*/
   color: white;
@@ -308,8 +328,11 @@ ul#countdown {
       margin-top: 0;
 
   }
-  .nav{
-    width: 25%;
+  &.nav{
+    display: block;
+    float: none;
+    margin: 0 auto 5%;
+    width: 150px;
     }}
 }
 @media all and(max-width: 510px){
@@ -652,7 +675,6 @@ ul#countdown {
 
 .partner-block, .social-link {
   display: inline-block;
-  vertical-align: top
 }
 
 .partner-block {
@@ -664,9 +686,8 @@ ul#countdown {
 .partner-img {
   margin: 0 auto;
   padding: 0 11px 4px;
-  vertical-align: bottom;
   img {
-    width: 14vw;
+    width: 80%;
   }
 }
 
@@ -775,9 +796,6 @@ ul#countdown {
     width: 35%;
     height: auto;
   }
-  .organizer div.name {
-    margin-top: 0;
-  }
   .copy {
     display: none
   }
@@ -786,7 +804,11 @@ ul#countdown {
     text-align: center
   }
 }
-
+@media all and(max-width: 800px){
+    .organizer div.name {
+    margin-top: 0;
+  }
+}
 .social-link {
   position: relative;
   line-height: 25px;

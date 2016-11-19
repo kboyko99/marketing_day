@@ -98,7 +98,12 @@ header {
   .navigation {
     position: absolute; }
   .head__title {
+    top: 30vh;
     padding-bottom: 45vh; } }
+
+@media all and (max-width: 510px) {
+  .head__title {
+    padding-bottom: 55vh; } }
 
 .logo {
   width: 35vw;
@@ -213,9 +218,19 @@ header {
   /*  background-color: $schedule-background;*/
   margin: 30% 0 0; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 510px) {
+  .info h1 {
+    font-size: 100%; }
+  .info h2 {
+    font-size: 75%; }
+  .info .geostasis {
+    width: 50%; }
   .description-layout {
-    margin: 25vw 0; } }
+    margin: 70% 0 10%; } }
+
+@media all and (max-width: 1024px) {
+  .info {
+    padding: 0px 0; } }
 
 .description__content {
   /*  background-color: $schedule-background;*/
@@ -257,8 +272,11 @@ ul#countdown {
     .register__button.down {
       padding: 2vh 10vw;
       margin-top: 0; }
-    .register__button .nav {
-      width: 25%; } }
+    .register__button.nav {
+      display: block;
+      float: none;
+      margin: 0 auto 5%;
+      width: 150px; } }
 
 @media all and (max-width: 510px) {
   ul#countdown {
@@ -549,8 +567,7 @@ ul#countdown {
   text-align: center; }
 
 .partner-block, .social-link {
-  display: inline-block;
-  vertical-align: top; }
+  display: inline-block; }
 
 .partner-block {
   width: 24.7%;
@@ -559,10 +576,9 @@ ul#countdown {
 
 .partner-img {
   margin: 0 auto;
-  padding: 0 11px 4px;
-  vertical-align: bottom; }
+  padding: 0 11px 4px; }
   .partner-img img {
-    width: 14vw; }
+    width: 80%; }
 
 .partner-link {
   cursor: pointer;
@@ -639,12 +655,14 @@ ul#countdown {
   .organizer .photo {
     width: 35%;
     height: auto; }
-  .organizer div.name {
-    margin-top: 0; }
   .copy {
     display: none; }
   .social-links {
     text-align: center; } }
+
+@media all and (max-width: 800px) {
+  .organizer div.name {
+    margin-top: 0; } }
 
 .social-link {
   position: relative;
