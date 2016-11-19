@@ -19,7 +19,7 @@ body, html {
 
 .form {
     width: 460px;
-    margin: 0 auto;
+    margin: 3vh auto 0;
 }
 
 @media all and (max-width: 470px) {
@@ -37,7 +37,7 @@ body, html {
 .head__title {
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
     width: 100%;
-    margin-top: 1vh;
+    margin-top: 3vh;
     text-align: center;
 }
 
@@ -58,6 +58,7 @@ body, html {
 
 .align-center {
     text-align: center;
+    padding-right: 0; 
 }
 
 .logo {
@@ -88,13 +89,18 @@ h1 {
 }
 
 ul {
-    margin: 0 auto;
-    padding: 2vh 0;
-    width: 30%;
+    margin-left: 38%;
+    padding: 0 0;
+    /*width: 30%;*/
 }
 
 @media (max-width: 600px) {
     ul {
         width: 80%;
     }
+}
+.list{
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 1vh;
 }

@@ -227,20 +227,6 @@ header {
   }
 }
 
-@media screen and (max-width: 800px) {
-  .info {
-    margin: 0 auto;
-    padding: 0;
-  }
-  .register__button{
-    min-width: 35vw;
-    font-size: 85%;
-  &.down {
-      padding: 2vh 10vw;
-      margin-top: 0;
-
-  }}
-}
 
 .register__button:focus, .register__button:hover {
   -webkit-animation-name: hvr-back-pulse;
@@ -307,6 +293,24 @@ ul#countdown {
       text-transform: uppercase;
     }
   }
+}
+
+@media screen and (max-width: 800px) {
+  .info {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .register__button{
+    min-width: 35vw;
+    font-size: 85%;
+  &.down {
+      padding: 2vh 10vw;
+      margin-top: 0;
+
+  }
+  .nav{
+    width: 25%;
+    }}
 }
 @media all and(max-width: 510px){
   ul#countdown{
