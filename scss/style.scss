@@ -355,7 +355,7 @@ ul#countdown {
   width: 70%;
 }
 
-.wrap:hover .speaker_photo:not(:hover) {
+.partner-img:not(:hover) {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   opacity: .75;
@@ -692,6 +692,8 @@ ul#countdown {
 }
 
 .partner-img {
+    -webkit-transition: .25s ease-in;
+  transition: .25s ease-in;
   margin: 0 auto;
   padding: 0 11px 4px;
   img {
@@ -883,7 +885,6 @@ footer {
   width: 100%;
   margin-top: -1vh;
   background: url("../images/footer_top.png") no-repeat 50% 100%;
-  z-index: 5;
 }
 
 .footer__bottom-bg {

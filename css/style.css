@@ -295,7 +295,7 @@ ul#countdown {
   margin: 0 auto;
   width: 70%; }
 
-.wrap:hover .speaker_photo:not(:hover) {
+.partner-img:not(:hover) {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   opacity: .75; }
@@ -582,6 +582,8 @@ ul#countdown {
   padding-bottom: 15px; }
 
 .partner-img {
+  -webkit-transition: .25s ease-in;
+  transition: .25s ease-in;
   margin: 0 auto;
   padding: 0 11px 4px; }
   .partner-img img {
@@ -727,8 +729,7 @@ footer {
   height: 309px;
   width: 100%;
   margin-top: -1vh;
-  background: url("../images/footer_top.png") no-repeat 50% 100%;
-  z-index: 5; }
+  background: url("../images/footer_top.png") no-repeat 50% 100%; }
 
 .footer__bottom-bg {
   margin-top: 0;
