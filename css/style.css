@@ -48,7 +48,14 @@ header {
   font-size: 85%;
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
   float: none;
-  text-align: center; }
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.active {
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)); }
 
 .nav__links {
   position: relative;
@@ -319,6 +326,9 @@ ul#countdown {
   -webkit-transition: .25s ease-in;
   transition: .25s ease-in; }
 
+.name {
+  font-weight: bold; }
+
 .speaker_photo {
   border-radius: 100%;
   width: 75%;
@@ -327,6 +337,11 @@ ul#countdown {
   float: none;
   border: 10px solid transparent;
   z-index: 999; }
+
+.position {
+  color: #024761;
+  font-size: 80%;
+  letter-spacing: 1.5px; }
 
 @media all and (max-width: 800px) {
   .wrap {
@@ -520,18 +535,19 @@ ul#countdown {
 
 .tickets__box-title {
   margin-bottom: 40px;
-  font-size: 19px;
+  font-size: 120%;
   font-weight: 600; }
 
 .tickets__box-price {
   margin-bottom: 40px;
   line-height: 1;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 125%; }
 
 .tickets__box-price sup {
   margin-left: 8px;
   top: -35px;
-  font-size: 50%;
+  font-size: 60%;
   line-height: 1; }
 
 @media all and (max-width: 510px) {
