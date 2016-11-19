@@ -328,6 +328,13 @@ ul#countdown {
   border: 10px solid transparent;
   z-index: 999; }
 
+@media all and (max-width: 800px) {
+  .wrap {
+    width: 95%; }
+  .speaker {
+    width: 50%;
+    margin: 0; } }
+
 .schedule__inner {
   position: relative;
   width: 100%;
@@ -427,7 +434,7 @@ ul#countdown {
   color: #fff;
   background: #089DD1; }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
   .schedule__info-text {
     font-size: 110%;
     height: auto;
@@ -455,7 +462,7 @@ ul#countdown {
   background: url("../images/icons/connector-2.png") no-repeat 100% 50% #fff;
   background-size: contain; }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
   .schedule__report-time {
     width: 80px;
     padding-left: 15px;
