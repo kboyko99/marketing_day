@@ -186,6 +186,8 @@ header {
     border-width: 5px;
     min-width: 15vw;
     width: 15vw; }
+  .register__button.down {
+    z-index: 999; }
 
 @media screen and (max-width: 800px) {
   .info {
@@ -706,10 +708,10 @@ footer {
   height: 159px;
   width: 100%;
   background: url("../images/footer_bottom.png") no-repeat 50% 100%;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   z-index: 9; }
 
 .copy {
