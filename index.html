@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Digital Marketing Day</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#d9e9bf">
     <meta property="og:title" content="Digital Marketing Day">
@@ -27,7 +28,6 @@
     <a class="nav__links place" href="#place">Місце</a>
     <a class="nav__links partners" href="#partners">Партнери</a>
     <a class="nav__links organizers" href="#organizers">Організатори</a>
-    <a class="nav__links contacts" href="#contacts">Контакти</a>
     <a href="tickets/" target="_blank" class="register__button nav">РЕЄСТРАЦІЯ</a>
 
 </div>
@@ -100,7 +100,7 @@
             <div class="position">SEO|решение</div>
         </div>
         <div class="speaker"><img src="images/speakers/lazy.jpg" class="speaker_photo"  alt="">
-            <div class="name">Гордієнко Іван</div>
+            <div class="name">Іван Гордієнко</div>
             <div class="position">DigitalWill</div>
         </div>
         <div class="speaker"><img src="images/speakers/Olga_Lutsenko.jpg" class="speaker_photo"  alt="">
@@ -255,7 +255,7 @@
             </li>            
         </ul>
         <a href="tickets/" target="_blank" class="register__button">
-            РЕЄСТРАЦІЯ
+            Придбати квиток
         </a>
     </div>
 </section>
@@ -301,9 +301,9 @@
                 </a>
             </div>
             <div class="partner-block">
-                <a class="partner-link" target="_blank" href="">
+                <div class="partner-link" target="_blank" href="">
                     <div class="partner-img"><img src="images/partners/top_rankings.jpg" alt="Top TopRankings"></div>
-                </a>
+                </div>
             </div>
             <div class="partner-block">
                 <a class="partner-link" target="_blank" href="http://www.seoreshenie.com/">
@@ -435,7 +435,7 @@ function myMap() {
     $(document).on("scroll", onScroll);
     
     //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
+    $('.navigation').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
         
