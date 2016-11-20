@@ -415,7 +415,14 @@
             // её "ножки" (точки привязки).
             iconImageOffset: [-3, -42]
         });
-
+    myMap.controls
+        // Кнопка изменения масштаба.
+        .remove('zoomControl', { left: 5, top: 5 })
+        // Список типов карты
+        .remove('typeSelector')
+        // Стандартный набор кнопок
+        .remove('mapTools', { left: 35, top: 5 });
+    myMap.behaviors.disable('scrollZoom');
     myMap.geoObjects.add(myPlacemark);
 });
 </script>
@@ -435,7 +442,7 @@ function myMap() {
     $(document).on("scroll", onScroll);
     
     //smoothscroll
-    $('.navigation').on('click', function (e) {
+    $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
         
@@ -458,11 +465,11 @@ function myMap() {
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
-    $('.navigation a').each(function () {
+    $('.nav__links').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('.navigation a').removeClass("active");
+            $('.nav__links').removeClass("active");
             currLink.addClass("active");
         }
         else{

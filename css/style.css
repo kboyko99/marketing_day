@@ -579,7 +579,7 @@ ul#countdown {
 #map {
   width: 100%;
   height: 70vh;
-  pointer-events: none; }
+  /*pointer-events: none;*/ }
 
 .place-layout {
   height: auto; }
