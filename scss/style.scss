@@ -271,7 +271,11 @@ header {
   /*  background-color: $schedule-background;*/
   margin: 30% 0 0;
 }
-
+@media all and(max-width: 800px){
+  .description-layout{
+    margin-top: 45%;
+  }
+}
 @media screen and (max-width: 510px) {
   .info{
     h1{
