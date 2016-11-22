@@ -333,18 +333,20 @@ ul#countdown {
     padding: 0;
   }
   .register__button{
+
+    border: 1vw solid white;
     min-width: 35vw;
     font-size: 85%;
   &.down {
       padding: 2vh 10vw;
       margin-top: 0;
-
   }
   &.nav{
     display: block;
     float: none;
     margin: 0 auto 5%;
     width: 150px;
+    border-width: 1vw;
     }}
 }
 @media all and(max-width: 510px){
@@ -653,9 +655,25 @@ ul#countdown {
   font-size: 60%;
   line-height: 1;
 }
+
+
+
+@media all and (max-width: 800px){
+  .tickets__list{
+    width: 75%;
+  }
+  .tickets__list-item{
+    width: 49%;
+  }
+}
 @media all and (max-width: 510px){
   .tickets__list-item{
     width: 95%;
+  }
+}
+@media all and (max-width: 400px){
+  .tickets__list{
+    width: 80%
   }
 }
 .fullwidth_header, .head-moto {
@@ -684,9 +702,12 @@ ul#countdown {
 #map {
   width: 100%;
   height: 70vh;
-  /*pointer-events: none;*/
 }
-
+@media all and(max-width: 800px){
+  #map{
+    height: 60vh;
+  }
+}
 .place-layout {
   height: auto;
 }
