@@ -25,12 +25,10 @@ html {
 
 .head-layout {
   position: relative;
-  width: 100%;
-  /*background: $schedule-background;*/ }
+  width: 100%; }
 
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/background.png") no-repeat center center;
-  /*background-color: #09AEE6;*/
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -120,7 +118,7 @@ header {
   margin: -7vh 0vw 5vh -45vw;
   background: none; }
 
-@media all and (max-width: 1990px) {
+@media all and (max-width: 1970px) {
   .logo {
     margin: 0vh 0vw 0vh -45vw; } }
 
@@ -134,7 +132,8 @@ header {
   margin-left: 40vw;
   padding: 50px 0;
   color: #024761;
-  margin-top: -25vw; }
+  margin-top: -25vw;
+  font-size: 130%; }
   .info .geostasis {
     margin: 0 auto;
     padding: 0;
@@ -226,8 +225,11 @@ header {
     border-width: 5px; }
 
 .description-layout {
-  /*  background-color: $schedule-background;*/
   margin: 30% 0 0; }
+
+@media all and (max-width: 1960px) {
+  .info {
+    font-size: 100%; } }
 
 @media all and (max-width: 800px) {
   .description-layout {
@@ -248,7 +250,6 @@ header {
     padding: 0px 0; } }
 
 .description__content {
-  /*  background-color: $schedule-background;*/
   color: white;
   width: 70%;
   margin: 0vh auto;
@@ -739,16 +740,16 @@ ul#countdown {
 .social-icons.fb, .social-icons.instagram {
   width: 19px; }
 
+.social-icons.vk {
+  height: 28px;
+  top: 20px; }
+
 .social-links {
   width: 35vw;
   font-size: 1.5vw;
   margin-top: -15vw;
   margin-left: 60vw;
   margin-bottom: 10%; }
-
-.social-icons.vk {
-  height: 28px;
-  top: 20px; }
 
 footer {
   background-color: #09AEE6;

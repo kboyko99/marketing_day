@@ -38,12 +38,10 @@ html {
 .head-layout {
   position: relative;
   width: 100%;
-  /*background: $schedule-background;*/
 }
 
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/background.png") no-repeat center center;
-  /*background-color: #09AEE6;*/
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -143,7 +141,7 @@ header {
 
   background: none;
 }
-@media all and (max-width: 1990px){
+@media all and (max-width: 1970px){
   .logo{
       margin: 0vh 0vw 0vh -45vw;
   }
@@ -161,6 +159,7 @@ header {
   padding: 50px 0;
   color: $cool-blue;
   margin-top: -25vw;
+  font-size: 130%;
   .geostasis {
     margin: 0 auto;
     padding: 0;
@@ -268,10 +267,14 @@ header {
 }
 
 .description-layout {
-  /*  background-color: $schedule-background;*/
   margin: 30% 0 0;
 }
-@media all and(max-width: 800px){
+@media all and (max-width: 1960px){
+  .info{
+    font-size: 100%;
+  }
+}
+@media all and (max-width: 800px){
   .description-layout{
     margin-top: 45%;
   }
@@ -298,7 +301,6 @@ header {
   }
 }
 .description__content {
-  /*  background-color: $schedule-background;*/
   color: white;
   width: 70%;
   margin: 0vh auto;
