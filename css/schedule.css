@@ -1,0 +1,200 @@
+@font-face {
+  font-family: 'MyCoco';
+  src: url("../fonts/9653.ttf");
+}
+
+@font-face {
+  font-family: 'Numbers';
+  src: local("Circle Light"),
+  url("../fonts/CircleLight.otf");
+}
+
+body, html {
+  margin: 0;
+}
+html {
+  background-color: #09AEE6;
+  color: #fff;
+  text-align: center;
+  font-size: 140%;
+  font-weight: bold;
+  font-family: 'MyCoco';
+}
+.schedule__content {
+  margin: 0vh 20vw 50px 20vw;
+  font-size: 80%;
+}
+
+.schedule__content:last-child {
+  margin-bottom: 0;
+}
+
+.schedule__hall-titles {
+  margin-left: 210px;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.schedule__hall-title-a {
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+}
+
+.title {
+  width: 48vw;
+  text-transform: uppercase;
+  font-size: 250%;
+  text-align: center;
+  color: #fff;
+  font-family: 'MyCoco';
+  font-weight: 600;
+  border: 1px solid white;
+  border-left: none;
+  border-right: none;
+  margin: 2vw auto;
+  
+}
+.schedule__title {
+    margin-left: 31vw;
+}
+.schedule__bottom-bg {
+  position: relative;
+  height: 179px;
+  width: 100%;
+  background: url("../images/schedule_bottom.png") no-repeat 50% 100%;
+  z-index: 9;
+}
+
+.schedule__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.schedule__info-time {
+  padding-left: 15px;
+  color: #fff;
+  width: 10vw;
+  height: 3vw;
+  line-height: 3vw;
+  background: url("../images/icons/connector-1.png") no-repeat 100% 50% #1DB3E6;
+  background-size: contain;
+}
+
+.schedule__info-time--hatching {
+  background: url("../images/icons/connector-hatching.png") no-repeat 100% 50% #1DB3E6;
+  background-size: contain;
+}
+
+.schedule__info-text {
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 3vw;
+  line-height: 3vw;
+  color: #fff;
+  background: #089DD1;
+}
+
+.schedule__info-text--with-margin {
+  margin-right: 13px;
+}
+
+.schedule__reporter {
+  color: #666666;
+}
+
+.schedule__report {
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.schedule__report-time {
+  padding-left: 25px;
+  color: #000;
+  width: 9vw;
+  height: 56px;
+  line-height: 56px;
+  background: url("../images/icons/connector-2.png") no-repeat 100% 50% #fff;
+  background-size: contain;
+}
+.schedule__report-hall-a, .schedule__report-hall-b {
+  padding: 0.5vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+  background: #fff;
+  color: black;
+}
+@media screen and (max-width: 800px) {
+	.schedule__title, .title {
+		font-size: 200%;
+		width: 95%;
+		margin: 1vh auto;
+		letter-spacing: -1px;
+	}
+	.schedule__info{
+		height: 45px;
+	}
+	.schedule__info-time {
+		width: 25%;
+		height: auto;
+		line-height: 1;
+		padding: 2.5% 0 ;
+		background: #089DD1; 
+		text-align: center;
+		width: 20%;
+		font-size: 110%;
+	}
+	.schedule__info-text{
+		padding: 2.5% 0;
+	}
+	.schedule__report-time{
+		text-align: center;
+		background: white;
+		border-right: 1px solid #09AEE6;
+		width: 20%;
+		height: 85px;
+		padding: 35px 0 0;
+		font-size: 110%;
+
+	}
+	.schedule__report{
+		font-size: 110%;
+		height: 120px;
+	}
+	.schedule__content{
+		width: 95%;
+		margin: 0 auto;
+	}
+	.schedule__info-text {
+		font-size: 110%;
+		height: auto;
+		line-height: 1;
+	}
+}
