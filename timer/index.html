@@ -56,8 +56,7 @@ function countdown(){
 countdown();
 
 function displayTime() {
-	var tenths = count;  
-	var sec = Math.floor(tenths / 10);
+    var sec = Math.floor(count / 10);
 	var hours = Math.floor(sec / 3600);
 	sec -= hours * (3600);
 	var mins = Math.floor(sec / 60);
