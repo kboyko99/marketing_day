@@ -1,0 +1,46 @@
+.container{
+  width: 95%;
+  margin: 0 auto;
+}
+p {
+  text-align: center;
+  margin: 25vh auto 0;
+  font-size: 14em;
+  font-family: courier;
+}
+.show{
+  float: right;
+  font-size: 3em;
+}
+.admin {
+  float: right;
+  margin: 20px;
+  font-size: 5em;
+  font-family: courier;
+  width: 20%;
+  display: inline-block;
+}
+
+
+button {
+  display: inline-block;
+  margin: 0 5% 0;
+  color: white;
+  float: right;
+  background-color: black;
+  border-radius: 50px;
+  width: 20%;
+  height: auto;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+} 
+input{
+  border: 2px solid black;
+  border-radius: 5%;
+  padding: 8px;
+  width: 20%;
+}
+.display_none {
+  display: none;
+}

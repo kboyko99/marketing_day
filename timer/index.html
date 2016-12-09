@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timer</title>
+	<link rel="stylesheet" type="text/css" href="../css/timer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="show" onclick="show()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+<div class="admin display_none">
+  <button onclick="playpause()"><i id="playpause" class="fa fa-play" aria-hidden="true"></i></button>
+  <button onclick="reset()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+   <input type="number" name="setTime" value="45" class="settings display_none">
+  <button onclick="settings()" class="settings"><i class="fa fa-cog" aria-hidden="true"></i></button><br>
+  <button onclick="save()" class=""><i class="fa fa-check" aria-hidden="true"></i></button>
+</div>
+<div class="container">
+	<p id="timer"></p>
+</div>
+
+<script type="text/javascript">
+var minutes = 45;
+var COUNT_START = 10*minutes*60; // tenths * seconds * hours
+var count = COUNT_START;
+var playing = false;
+//var stop = false;
+var playpause = function() {
+	if (playing) {
+		playing = false; 
+		$("#playpause").attr('class', 'fa fa-play');
+	} else if (!playing) {
+		playing = true; 
+		$("#playpause").attr('class', 'fa fa-pause');
+	}
+};
+
+var reset = function() {
+	if (playing) {
+		playing = false; 
+		$("#playpause").attr('class', 'fa fa-play');
+	}
+	count = COUNT_START;
+};
+
+function countdown(){
+    displayTime(); 
+    if (count == 0) {
+    	playing = false;
+    } else if (playing) {
+		setTimeout(countdown, 100);
+		count--;
+    } else  {
+     	setTimeout(countdown, 100); 
+    }
+}
+countdown();
+
+function displayTime() {
+	var tenths = count;  
+	var sec = Math.floor(tenths / 10);
+	var hours = Math.floor(sec / 3600);
+	sec -= hours * (3600);
+	var mins = Math.floor(sec / 60);
+	sec -= mins * (60);
+	if (hours < 1)
+		document.getElementById('timer').innerHTML = LeadingZero(mins)+':'+LeadingZero(sec);
+	else
+		document.getElementById('timer').innerHTML = hours+':'+LeadingZero(mins)+':'+LeadingZero(sec);
+}
+function LeadingZero(Time) {
+	return (Time < 10) ? "0" + Time : + Time;
+}
+function settings(){
+	$( ".settings" ).toggleClass( "display_none" );
+}
+function save(){
+	if($( "input" ).val()!=minutes){
+		minutes = $( "input" ).val();
+		COUNT_START = 10*minutes*60;
+		count = COUNT_START;
+		playpause();
+//		countdown();
+	}
+	$( ".show" ).toggleClass( "display_none" );
+	$( ".admin" ).toggleClass( "display_none" );
+	// $( ".settings" ).toggleClass( "display_none" );
+}
+function show(){
+	$( ".show" ).toggleClass( "display_none" );
+	$( ".admin" ).toggleClass( "display_none" );
+}
+</script>
+</body>
+</html>
