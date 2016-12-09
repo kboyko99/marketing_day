@@ -9,18 +9,17 @@
 <body>
 <div class="show" onclick="show()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
 <div class="admin display_none">
-  <button onclick="playpause()"><i id="playpause" class="fa fa-play" aria-hidden="true"></i></button>
-  <button onclick="reset()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
-   <input type="number" name="setTime" value="45" class="settings display_none">
-  <button onclick="settings()" class="settings"><i class="fa fa-cog" aria-hidden="true"></i></button><br>
-  <button onclick="save()" class=""><i class="fa fa-check" aria-hidden="true"></i></button>
+  <button class="admin-element" onclick="playpause()" id="playpause">PLAY</button>
+  <button class="admin-element" onclick="reset()">RESTART</button>
+  <input type="number" name="setTime" value="25" class="admin-element settings display_none" title="">
+  <button class="admin-element settings" onclick="settings()">EDIT</button><br>
+  <button class="admin-element" onclick="save()">SAVE</button>
 </div>
 <div class="container">
 	<p id="timer"></p>
 </div>
-
 <script type="text/javascript">
-var minutes = 45;
+var minutes = 25;
 var COUNT_START = 10*minutes*60; // tenths * seconds * hours
 var count = COUNT_START;
 var playing = false;
@@ -28,10 +27,10 @@ var playing = false;
 var playpause = function() {
 	if (playing) {
 		playing = false; 
-		$("#playpause").attr('class', 'fa fa-play');
+		$("#playpause").html('PLAY');
 	} else if (!playing) {
 		playing = true; 
-		$("#playpause").attr('class', 'fa fa-pause');
+		$("#playpause").html('PAUSE');
 	}
 };
 

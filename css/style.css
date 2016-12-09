@@ -15,7 +15,7 @@ html {
   text-align: center;
   font-size: 140%;
   font-weight: bold;
-  font-family: 'MyCoco'; }
+  font-family: 'MyCoco', serif; }
 
 .contact-info a, .nav__links, .register__button, .speaker__link {
   text-decoration: none; }
@@ -115,12 +115,12 @@ header {
   height: auto;
   top: 0;
   padding: 5vh 5vw 5vh 5vw;
-  margin: -7vh 0vw 5vh -45vw;
+  margin: -7vh 0 5vh -45vw;
   background: none; }
 
 @media all and (max-width: 1970px) {
   .logo {
-    margin: 0vh 0vw 0vh -45vw; } }
+    margin: 0 0 0 -45vw; } }
 
 @media screen and (max-width: 800px) {
   .logo {
@@ -153,16 +153,16 @@ header {
     .info span.month {
       font-weight: bold; }
   .info h1, .info h2, .info h3, .info span, .info .geostasis {
-    padding: 0vh 0vw 0vh 0vw; }
+    padding: 0 0 0 0; }
   .info .date {
-    font-family: "Numbers";
+    font-family: "Numbers", serif;
     font-size: 24px;
     margin: 0;
     width: 100%;
     height: auto; }
 
 .number {
-  font-family: "Numbers";
+  font-family: "Numbers", serif;
   font-weight: normal; }
 
 .head__title__city {
