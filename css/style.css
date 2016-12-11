@@ -98,7 +98,11 @@ header {
   top: 27vh;
   padding: 5vh 0;
   max-height: 18vw; }
-
+/*@media all and (max-width: 1270px){
+  .head__title{
+    padding: 0 0 5vh;
+  }
+}*/
 @media screen and (max-width: 800px) {
   .navigation {
     position: absolute; }
@@ -230,7 +234,17 @@ header {
 @media all and (max-width: 1960px) {
   .info {
     font-size: 100%; } }
-
+@media all and (max-width: 1270px){
+  .info{
+    padding-top: 5%;
+  }
+  .head__title.logo{
+    padding: 0;
+  }
+  .description-layout{
+    margin: 35vw 0 0;
+  }
+}
 @media all and (max-width: 800px) {
   .description-layout {
     margin-top: 45%; } }
@@ -244,10 +258,6 @@ header {
     width: 50%; }
   .description-layout {
     margin: 70% 0 10%; } }
-
-@media all and (max-width: 1024px) {
-  .info {
-    padding: 0px 0; } }
 
 .description__content {
   color: white;
@@ -747,9 +757,7 @@ ul#countdown {
 .social-links {
   width: 35vw;
   font-size: 1.5vw;
-  margin-top: -15vw;
-  margin-left: 60vw;
-  margin-bottom: 10%; }
+  margin: -5% auto 5%;}
 
 footer {
   background-color: #09AEE6;
